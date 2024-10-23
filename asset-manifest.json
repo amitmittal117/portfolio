@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.b1345fa6.css",
-    "main.js": "/portfolio/static/js/main.f5fb70aa.js",
+    "main.css": "/portfolio/static/css/main.c92e09a7.css",
+    "main.js": "/portfolio/static/js/main.b7219a0d.js",
     "static/js/453.1407b060.chunk.js": "/portfolio/static/js/453.1407b060.chunk.js",
     "static/media/ibm-cloud-advocate-essentials.png": "/portfolio/static/media/ibm-cloud-advocate-essentials.7f43952ac2f0feacbb3d.png",
     "static/media/ibm-certified-advocate-cloud-v2.png": "/portfolio/static/media/ibm-certified-advocate-cloud-v2.78636b0fff435492f945.png",
@@ -11,12 +11,12 @@
     "static/media/aws-educate-machine-learning-foundations.png": "/portfolio/static/media/aws-educate-machine-learning-foundations.c4bea17de1711428a024.png",
     "static/media/aws-educate-introduction-to-generative-ai-full.png": "/portfolio/static/media/aws-educate-introduction-to-generative-ai-full.c3b214db953c5cb443b2.png",
     "index.html": "/portfolio/index.html",
-    "main.b1345fa6.css.map": "/portfolio/static/css/main.b1345fa6.css.map",
-    "main.f5fb70aa.js.map": "/portfolio/static/js/main.f5fb70aa.js.map",
+    "main.c92e09a7.css.map": "/portfolio/static/css/main.c92e09a7.css.map",
+    "main.b7219a0d.js.map": "/portfolio/static/js/main.b7219a0d.js.map",
     "453.1407b060.chunk.js.map": "/portfolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b1345fa6.css",
-    "static/js/main.f5fb70aa.js"
+    "static/css/main.c92e09a7.css",
+    "static/js/main.b7219a0d.js"
   ]
 }
