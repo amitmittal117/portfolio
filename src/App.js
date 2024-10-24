@@ -9,10 +9,9 @@ import {
   Sun,
   Moon,
 } from "lucide-react";
-import certificatesData from './jsons/my_certificates.json';
-import timelineData from './jsons/my_timeline.json';
-import skillsData from './jsons/my_skills.json';
-
+import certificatesData from "./jsons/my_certificates.json";
+import timelineData from "./jsons/my_timeline.json";
+import skillsData from "./jsons/my_skills.json";
 
 import generativeIAFull from "./img/aws-educate-introduction-to-generative-ai-full.png";
 import deepRace from "./img/aws-educate-machine-learning-deepracer.png";
@@ -21,7 +20,9 @@ import ibmCloudAdvEs from "./img/ibm-cloud-advocate-essentials.png";
 import ibmCloudAdvV2 from "./img/ibm-certified-advocate-cloud-v2.png";
 import ibmSecurityFoundations from "./img/security-and-privacy-by-design-foundations.png";
 import ibmEnterpriseDesign from "./img/enterprise-design-thinking-practitioner.png";
+import ReactGA4 from "react-ga4";
 
+ReactGA4.initialize("G-XXXXXXXXXX");
 
 const imageMapping = {
   generativeIAFull: generativeIAFull,
@@ -30,7 +31,7 @@ const imageMapping = {
   ibmCloudAdvEs: ibmCloudAdvEs,
   ibmCloudAdvV2: ibmCloudAdvV2,
   ibmSecurityFoundations: ibmSecurityFoundations,
-  ibmEnterpriseDesign: ibmEnterpriseDesign
+  ibmEnterpriseDesign: ibmEnterpriseDesign,
 };
 
 const useTheme = () => {
@@ -42,9 +43,9 @@ const useTheme = () => {
         return savedTheme;
       }
       // If no theme is saved, check system preference
-      if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-        return "dark";
-      }
+      // if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+      //   return "dark";
+      // }
     }
     return "light";
   });
@@ -57,6 +58,31 @@ const useTheme = () => {
   }, [theme]);
 
   return [theme, setTheme];
+};
+
+ // Add these tracking functions before your Portfolio component
+ const trackCertificateClick = (certTitle) => {
+  ReactGA4.event({
+    category: "Certificate Interaction",
+    action: "Click",
+    label: certTitle,
+  });
+};
+
+const trackSocialClick = (platform) => {
+  ReactGA4.event({
+    category: "Social Link",
+    action: "Click",
+    label: platform,
+  });
+};
+
+const trackContactClick = (method) => {
+  ReactGA4.event({
+    category: "Contact",
+    action: "Click",
+    label: method,
+  });
 };
 
 const ThemeToggle = ({ theme, setTheme }) => {
@@ -79,7 +105,6 @@ const ThemeToggle = ({ theme, setTheme }) => {
     </button>
   );
 };
-
 
 // Certificate Card Component
 const CertificateCard = ({ cert, index }) => {
@@ -113,6 +138,7 @@ const CertificateCard = ({ cert, index }) => {
                     href={cert.publicUrl}
                     target="_blank"
                     rel="noopener noreferrer"
+                    onClick={() => trackCertificateClick(cert.title)}
                     className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200 cursor-pointer"
                   >
                     {cert.title}
@@ -168,13 +194,52 @@ const CertificateCard = ({ cert, index }) => {
 
 const Portfolio = () => {
   const [theme, setTheme] = useTheme();
+  const [visibleSection, setVisibleSection] = useState("");
+
+  // Add this useEffect for tracking section views
+  useEffect(() => {
+    // Track initial pageview
+    ReactGA4.send({ hitType: "pageview", page: window.location.pathname });
+
+    const handleScroll = () => {
+      const sections = [
+        "header",
+        "journey",
+        "skills",
+        "certificates",
+        "education",
+        "contact",
+      ];
+      const currentSection = sections.find((section) => {
+        const element = document.getElementById(section);
+        if (element) {
+          const rect = element.getBoundingClientRect();
+          return rect.top >= 0 && rect.top <= window.innerHeight / 2;
+        }
+        return false;
+      });
+
+      if (currentSection && currentSection !== visibleSection) {
+        setVisibleSection(currentSection);
+        ReactGA4.send({
+          hitType: "pageview",
+          page: `/#${currentSection}`,
+        });
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [visibleSection]);
 
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors duration-200">
       <ThemeToggle theme={theme} setTheme={setTheme} />
 
       {/* Header/Hero Section */}
-      <header className="bg-blue-900 dark:bg-gray-900 text-white min-h-screen flex flex-col justify-center relative transition-colors duration-200">
+      <header
+        id="header"
+        className="bg-blue-900 dark:bg-gray-900 text-white min-h-screen flex flex-col justify-center relative transition-colors duration-200"
+      >
         <div className="container mx-auto px-4 py-16">
           <h1 className="text-5xl font-bold mb-4">Amit Mittal</h1>
           <h2 className="text-2xl mb-8">
@@ -187,22 +252,25 @@ const Portfolio = () => {
           </p>
           <div className="flex gap-4">
             <a
-              href="https://github.com/amitmittal117"
-              className="p-2 hover:bg-blue-800 rounded-full"
-            >
-              <Github size={24} />
-            </a>
-            <a
               href="https://linkedin.com/in/amitrmittal"
               className="p-2 hover:bg-blue-800 dark:hover:bg-gray-700 rounded-full transition-colors"
+              onClick={() => trackSocialClick("LinkedIn")}
             >
               <Linkedin size={24} />
             </a>
             <a
               href="mailto:amitarmittal@gmail.com"
               className="p-2 hover:bg-blue-800 dark:hover:bg-gray-700 rounded-full transition-colors"
+              onClick={() => trackContactClick("Email")}
             >
               <Mail size={24} />
+            </a>
+            <a
+              href="https://github.com/amitmittal117"
+              className="p-2 hover:bg-blue-800 rounded-full"
+              onClick={() => trackSocialClick("GitHub")}
+            >
+              <Github size={24} />
             </a>
           </div>
         </div>
@@ -213,7 +281,10 @@ const Portfolio = () => {
       </header>
 
       {/* Journey Timeline */}
-      <section className="py-20 bg-white dark:bg-gray-800 transition-colors duration-200">
+      <section
+        id="journey"
+        className="py-20 bg-white dark:bg-gray-800 transition-colors duration-200"
+      >
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-12 text-center dark:text-white">
             Professional Journey
@@ -260,9 +331,11 @@ const Portfolio = () => {
 
       {/* Assistantship */}
 
-
       {/* Skills Section */}
-      <section className="py-20 bg-gray-50 dark:bg-gray-900 transition-colors duration-200">
+      <section
+        id="skills"
+        className="py-20 bg-gray-50 dark:bg-gray-900 transition-colors duration-200"
+      >
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-12 text-center dark:text-white">
             Technical Skills
@@ -293,7 +366,10 @@ const Portfolio = () => {
       </section>
 
       {/* Certificate Section */}
-      <section className="py-20 bg-gray-50 dark:bg-gray-900 transition-colors duration-200">
+      <section
+        id="certificates"
+        className="py-20 bg-gray-50 dark:bg-gray-900 transition-colors duration-200"
+      >
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-12 text-center dark:text-white">
             Certificates
@@ -307,7 +383,10 @@ const Portfolio = () => {
       </section>
 
       {/* Education Section */}
-      <section className="py-20 bg-white dark:bg-gray-700 transition-colors duration-200">
+      <section
+        id="education"
+        className="py-20 bg-white dark:bg-gray-700 transition-colors duration-200"
+      >
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-12 text-center dark:text-white">
             Education
@@ -356,7 +435,10 @@ const Portfolio = () => {
       </section>
 
       {/* Contact Section */}
-      <section className="py-20 bg-blue-900 dark:bg-gray-900 text-white transition-colors duration-200">
+      <section
+        id="contact"
+        className="py-20 bg-blue-900 dark:bg-gray-900 text-white transition-colors duration-200"
+      >
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-8">Let's Connect</h2>
           <p className="mb-8 text-xl">
@@ -366,12 +448,14 @@ const Portfolio = () => {
             <a
               href="mailto:amitarmittal@gmail.com"
               className="flex items-center hover:text-blue-300 transition-colors"
+              onClick={() => trackContactClick("Email")}
             >
               <Mail className="mr-2" /> amitarmittal@gmail.com
             </a>
             <a
               href="tel:7146814599"
               className="flex items-center hover:text-blue-300 transition-colors"
+              onClick={() => trackContactClick("Phone")}
             >
               📱 (714) 681-4599
             </a>
