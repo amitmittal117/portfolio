@@ -1,0 +1,15 @@
+{
+    "assistantships":[
+        {
+            "date": "2022-2024",
+            "title": "Software Engineer",
+            "company": "IBM LABS",
+            "description": [
+              "Implemented IBM's Secret Manager on PaaS with SOC2 compliant encryption, eliminating HSMs from data centers and reducing migration time by 95%, saving $3 Million",
+              "Integrated IBM IAM (Blue Groups) with LDAP for automated user permission management, reducing manual intervention and cutting ticket turnaround time by 90%",
+              "Integrated Microservices with Debezium to enable real-time data transfer and auditing for data centers, automating updates to SSOT and SNOW"
+            ],
+            "skills": ["Python", "Django", "Java", "Spring Boot", "Postgres"]
+          }
+    ]
+}

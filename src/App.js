@@ -10,6 +10,9 @@ import {
   Moon,
 } from "lucide-react";
 import certificatesData from './jsons/my_certificates.json';
+import timelineData from './jsons/my_timeline.json';
+import skillsData from './jsons/my_skills.json';
+
 
 import generativeIAFull from "./img/aws-educate-introduction-to-generative-ai-full.png";
 import deepRace from "./img/aws-educate-machine-learning-deepracer.png";
@@ -77,57 +80,6 @@ const ThemeToggle = ({ theme, setTheme }) => {
   );
 };
 
-const timelineData = [
-  {
-    date: "2022-2024",
-    title: "Software Engineer",
-    company: "IBM LABS",
-    description: [
-      "Implemented IBM's Secret Manager on PaaS with SOC2 compliant encryption, eliminating HSMs from data centers and reducing migration time by 95%, saving $3 Million",
-      "Integrated IBM IAM (Blue Groups) with LDAP for automated user permission management, reducing manual intervention and cutting ticket turnaround time by 90%",
-      "Integrated Microservices with Debezium to enable real-time data transfer and auditing for data centers, automating updates to SSOT and SNOW",
-    ],
-    skills: ["Python", "Django", "Java", "Spring Boot", "Postgres"],
-  },
-  {
-    date: "2021-2022",
-    title: "Full Stack Developer",
-    company: "Axiom IO",
-    description: [
-      "Designed and architected a Sports Aggregator Platform in Java Spring Boot, efficiently managing ~14M weekly sports feed requests with a segregated layered architecture, reducing response time by 30%",
-      "Built CI/CD pipelines for dev, stage, and prod environments using Amazon CodePipeline, cutting release time by 50% and saving $200K annually in deployment costs",
-      "Developed Golang REST APIs for major game providers (Ezugi, DreamCasino, SuperSpade, Pragmatic Play), helping $2M+ in game transactions, reducing downtime by 40%, and saving $150K in operational costs",
-    ],
-    skills: ["Golang", "MongoDB", "AWS", "CI/CD"],
-  },
-  {
-    date: "2018-2021",
-    title: "Software Developer",
-    company: "Kuliza Technologies",
-    description: [
-      "Led Educational Loan project, designing key modules like EMI automation and account validation, managing a team of four, and improving process efficiency by 30%",
-      "Optimized SQL queries, cutting execution time by 88%, and built an auto trigger system reducing API downtime by 95% with 10% improved audit accuracy",
-    ],
-    skills: ["Python", "Django", "Java", "BPM", "SQL"],
-  },
-  {
-    date: "2017-2018",
-    title: "Software Developer",
-    company: "Digital Marketing Systems",
-    description: [
-      "Developed backend infrastructure in Flask for the company website with REST API (JSON) communication, improving SEO rankings by 25%, and built Android ERP modules, enhancing mobile adaptation by 30%",
-    ],
-    skills: ["Python", "Flask", "Android", "REST API"],
-  },
-];
-
-const skillsData = {
-  Languages: ["Python", "Golang", "Java"],
-  Frameworks: ["Django", "Flask", "Spring Boot", "Go Fiber"],
-  Databases: ["Postgres", "MongoDB"],
-  "Cloud & DevOps": ["AWS", "Docker", "Kubernetes", "GitLab", "Linux"],
-  Tools: ["Kafka", "LDAP", "Swagger", "Helm Chart"],
-};
 
 // Certificate Card Component
 const CertificateCard = ({ cert, index }) => {
@@ -267,7 +219,7 @@ const Portfolio = () => {
             Professional Journey
           </h2>
           <div className="relative">
-            {timelineData.map((item, index) => (
+            {timelineData.timeline.map((item, index) => (
               <div key={index} className="mb-8 flex">
                 <div className="hidden md:block w-1/3 pr-8 text-right">
                   <span className="text-blue-600 dark:text-blue-400 font-semibold">
@@ -316,7 +268,7 @@ const Portfolio = () => {
             Technical Skills
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {Object.entries(skillsData).map(([category, skills]) => (
+            {Object.entries(skillsData.skills).map(([category, skills]) => (
               <div
                 key={category}
                 className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md transition-colors"

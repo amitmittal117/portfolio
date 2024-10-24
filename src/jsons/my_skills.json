@@ -1,0 +1,9 @@
+{
+  "skills": {
+    "Languages": ["Python", "Golang", "Java"],
+    "Frameworks": ["Django", "Flask", "Spring Boot", "Go Fiber"],
+    "Databases": ["Postgres", "MongoDB"],
+    "Cloud & DevOps": ["AWS", "Docker", "Kubernetes", "GitLab", "Linux"],
+    "Tools": ["Kafka", "LDAP", "Swagger", "Helm Chart"]
+  }
+}
