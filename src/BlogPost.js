@@ -5,7 +5,7 @@ import ReactMarkdown from 'react-markdown';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { tomorrow as codeTheme } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import remarkGfm from 'remark-gfm';
-
+const baseUrl = process.env.PUBLIC_URL;
 
 const BlogPost = () => {
   const { id } = useParams();
@@ -18,7 +18,7 @@ const BlogPost = () => {
   useEffect(() => {
     const fetchMarkdownNames = async () => {
       try {
-        const response = await fetch(`/portfolio/blog/posts.json`);
+        const response = await fetch(`${baseUrl}/blog/posts.json`);
         const data = await response.json();
         setBlogPosts(data[id])
       } catch (error) {
@@ -39,7 +39,7 @@ const BlogPost = () => {
       }
 
       try {
-        const response = await fetch(`/portfolio/blog/markdowns/${id}.md`);
+        const response = await fetch(`${baseUrl}/blog/markdowns/${id}.md`);
 
         if (!response.ok) {
           throw new Error(`Failed to fetch markdown: ${response.statusText}`);
@@ -72,7 +72,7 @@ const BlogPost = () => {
           <h1 className="text-2xl font-bold text-gray-800 dark:text-white mb-4">
             {error || 'Blog post not found'}
           </h1>
-          <button onClick={() => navigate('/portfolio/blogs')} className="text-blue-600 dark:text-blue-400 hover:underline">
+          <button onClick={() => navigate(`${baseUrl}/blogs`)} className="text-blue-600 dark:text-blue-400 hover:underline">
             Return to blogs
           </button>
         </div>
@@ -125,7 +125,7 @@ const BlogPost = () => {
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors duration-200">
       <div className="container mx-auto px-4 py-16">
         <button
-          onClick={() => navigate('/portfolio/blogs')}
+          onClick={() => navigate(`${baseUrl}/blogs`)}
           className="flex items-center gap-2 mb-8 text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
         >
           <ArrowLeft className="h-5 w-5" />

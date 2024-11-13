@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { ArrowLeft } from 'lucide-react';
 import { useState, useEffect } from 'react';
-
+const baseUrl = process.env.PUBLIC_URL;
 
 
 const BlogPage = ({ post }) => {
@@ -13,7 +13,7 @@ const BlogPage = ({ post }) => {
   useEffect(() => {
     const fetchMarkdownNames = async () => {
       try {
-        const response = await fetch(`/portfolio/blog/posts.json`);
+        const response = await fetch(`${baseUrl}/blog/posts.json`);
         const data = await response.json();
 
         const keys = Object.keys(data);
@@ -63,7 +63,7 @@ const BlogPage = ({ post }) => {
                 </div>
                 
                 <h2 className="text-xl font-semibold mb-3 text-gray-800 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
-                  <a href={`/portfolio/blog/${blogPosts[keys].id}`} className="block">
+                  <a href={`${baseUrl}/blog/${blogPosts[keys].id}`} className="block">
                     {blogPosts[keys].title}
                   </a>
                 </h2>
