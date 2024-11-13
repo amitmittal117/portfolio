@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.76374612.css",
-    "main.js": "/portfolio/static/js/main.46e5f2e0.js",
-    "static/js/453.ace21015.chunk.js": "/portfolio/static/js/453.ace21015.chunk.js",
-    "static/media/ibm-cloud-advocate-essentials.png": "/portfolio/static/media/ibm-cloud-advocate-essentials.7f43952ac2f0feacbb3d.png",
-    "static/media/ibm-certified-advocate-cloud-v2.png": "/portfolio/static/media/ibm-certified-advocate-cloud-v2.78636b0fff435492f945.png",
-    "static/media/security-and-privacy-by-design-foundations.png": "/portfolio/static/media/security-and-privacy-by-design-foundations.d7fc42e5e1e2d3e98275.png",
-    "static/media/enterprise-design-thinking-practitioner.png": "/portfolio/static/media/enterprise-design-thinking-practitioner.714811f1fba9eed7b52b.png",
-    "static/media/aws-educate-machine-learning-deepracer.png": "/portfolio/static/media/aws-educate-machine-learning-deepracer.41d612fb39d328c0feb1.png",
-    "static/media/aws-educate-machine-learning-foundations.png": "/portfolio/static/media/aws-educate-machine-learning-foundations.c4bea17de1711428a024.png",
-    "static/media/aws-educate-introduction-to-generative-ai-full.png": "/portfolio/static/media/aws-educate-introduction-to-generative-ai-full.c3b214db953c5cb443b2.png",
-    "index.html": "/portfolio/index.html",
-    "main.76374612.css.map": "/portfolio/static/css/main.76374612.css.map",
-    "main.46e5f2e0.js.map": "/portfolio/static/js/main.46e5f2e0.js.map",
-    "453.ace21015.chunk.js.map": "/portfolio/static/js/453.ace21015.chunk.js.map"
+    "main.css": "/static/css/main.76374612.css",
+    "main.js": "/static/js/main.0e503462.js",
+    "static/js/453.ace21015.chunk.js": "/static/js/453.ace21015.chunk.js",
+    "static/media/ibm-cloud-advocate-essentials.png": "/static/media/ibm-cloud-advocate-essentials.7f43952ac2f0feacbb3d.png",
+    "static/media/ibm-certified-advocate-cloud-v2.png": "/static/media/ibm-certified-advocate-cloud-v2.78636b0fff435492f945.png",
+    "static/media/security-and-privacy-by-design-foundations.png": "/static/media/security-and-privacy-by-design-foundations.d7fc42e5e1e2d3e98275.png",
+    "static/media/enterprise-design-thinking-practitioner.png": "/static/media/enterprise-design-thinking-practitioner.714811f1fba9eed7b52b.png",
+    "static/media/aws-educate-machine-learning-deepracer.png": "/static/media/aws-educate-machine-learning-deepracer.41d612fb39d328c0feb1.png",
+    "static/media/aws-educate-machine-learning-foundations.png": "/static/media/aws-educate-machine-learning-foundations.c4bea17de1711428a024.png",
+    "static/media/aws-educate-introduction-to-generative-ai-full.png": "/static/media/aws-educate-introduction-to-generative-ai-full.c3b214db953c5cb443b2.png",
+    "index.html": "/index.html",
+    "main.76374612.css.map": "/static/css/main.76374612.css.map",
+    "main.0e503462.js.map": "/static/js/main.0e503462.js.map",
+    "453.ace21015.chunk.js.map": "/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.76374612.css",
-    "static/js/main.46e5f2e0.js"
+    "static/js/main.0e503462.js"
   ]
 }
