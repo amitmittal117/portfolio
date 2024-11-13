@@ -72,7 +72,7 @@ const BlogPost = () => {
           <h1 className="text-2xl font-bold text-gray-800 dark:text-white mb-4">
             {error || 'Blog post not found'}
           </h1>
-          <button onClick={() => navigate('/blogs')} className="text-blue-600 dark:text-blue-400 hover:underline">
+          <button onClick={() => navigate('/portfolio/blogs')} className="text-blue-600 dark:text-blue-400 hover:underline">
             Return to blogs
           </button>
         </div>
@@ -125,7 +125,7 @@ const BlogPost = () => {
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors duration-200">
       <div className="container mx-auto px-4 py-16">
         <button
-          onClick={() => navigate('/blogs')}
+          onClick={() => navigate('/portfolio/blogs')}
           className="flex items-center gap-2 mb-8 text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
         >
           <ArrowLeft className="h-5 w-5" />

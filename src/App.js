@@ -29,6 +29,7 @@ import BlogPost from './BlogPost';
 
 ReactGA4.initialize("G-XXXXXXXXXX");
 
+
 const imageMapping = {
   generativeIAFull: generativeIAFull,
   mlFoundation: mlFoundation,
@@ -239,9 +240,9 @@ const Portfolio = () => {
   return (
     <Router>
     <Routes>
-    <Route path="/blogs" element={<BlogPage />} />
-    <Route path="/blog/:id" element={<BlogPost />} />
-    <Route path="/" element={
+    <Route path="/portfolio/blogs" element={<BlogPage />} />
+    <Route path="/portfolio/blog/:id" element={<BlogPost />} />
+    <Route path="/portfolio/" element={
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors duration-200">
       <ThemeToggle theme={theme} setTheme={setTheme} />
       <BlogButton />

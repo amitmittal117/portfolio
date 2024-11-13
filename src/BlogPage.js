@@ -63,7 +63,7 @@ const BlogPage = ({ post }) => {
                 </div>
                 
                 <h2 className="text-xl font-semibold mb-3 text-gray-800 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
-                  <a href={`/blog/${blogPosts[keys].id}`} className="block">
+                  <a href={`/portfolio/blog/${blogPosts[keys].id}`} className="block">
                     {blogPosts[keys].title}
                   </a>
                 </h2>
