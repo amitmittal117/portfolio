@@ -22,6 +22,11 @@ import ibmSecurityFoundations from "./img/security-and-privacy-by-design-foundat
 import ibmEnterpriseDesign from "./img/enterprise-design-thinking-practitioner.png";
 import ReactGA4 from "react-ga4";
 
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BlogButton } from './BlogButton';
+import BlogPage from './BlogPage';
+import BlogPost from './BlogPost';
+
 ReactGA4.initialize("G-XXXXXXXXXX");
 
 const imageMapping = {
@@ -232,9 +237,14 @@ const Portfolio = () => {
   }, [visibleSection]);
 
   return (
+    <Router>
+    <Routes>
+    <Route path="/blogs" element={<BlogPage />} />
+    <Route path="/blog/:id" element={<BlogPost />} />
+    <Route path="/" element={
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors duration-200">
       <ThemeToggle theme={theme} setTheme={setTheme} />
-
+      <BlogButton />
       {/* Header/Hero Section */}
       <header
         id="header"
@@ -463,6 +473,9 @@ const Portfolio = () => {
         </div>
       </section>
     </div>
+     } />
+     </Routes>
+     </Router>
   );
 };
 
