@@ -5,7 +5,7 @@ import ReactMarkdown from 'react-markdown';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { tomorrow as codeTheme } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import remarkGfm from 'remark-gfm';
-const baseUrl = process.env.PUBLIC_URL;
+const baseUrl = process.env.PUBLIC_URL || '';
 
 const BlogPost = () => {
   const { id } = useParams();
