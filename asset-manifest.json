@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.8a1aac07.css",
-    "main.js": "/portfolio/static/js/main.c2d89ec2.js",
+    "main.js": "/portfolio/static/js/main.ef2c8f88.js",
     "static/js/453.ace21015.chunk.js": "/portfolio/static/js/453.ace21015.chunk.js",
     "static/media/ibm-cloud-advocate-essentials.png": "/portfolio/static/media/ibm-cloud-advocate-essentials.7f43952ac2f0feacbb3d.png",
     "static/media/ibm-certified-advocate-cloud-v2.png": "/portfolio/static/media/ibm-certified-advocate-cloud-v2.78636b0fff435492f945.png",
@@ -12,11 +12,11 @@
     "static/media/aws-educate-introduction-to-generative-ai-full.png": "/portfolio/static/media/aws-educate-introduction-to-generative-ai-full.c3b214db953c5cb443b2.png",
     "index.html": "/portfolio/index.html",
     "main.8a1aac07.css.map": "/portfolio/static/css/main.8a1aac07.css.map",
-    "main.c2d89ec2.js.map": "/portfolio/static/js/main.c2d89ec2.js.map",
+    "main.ef2c8f88.js.map": "/portfolio/static/js/main.ef2c8f88.js.map",
     "453.ace21015.chunk.js.map": "/portfolio/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8a1aac07.css",
-    "static/js/main.c2d89ec2.js"
+    "static/js/main.ef2c8f88.js"
   ]
 }
