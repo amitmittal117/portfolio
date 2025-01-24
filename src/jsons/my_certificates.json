@@ -1,10 +1,19 @@
 {
   "certificates": [
     {
+      "date": "2025",
+      "title": "Introduction to AI and Machine Learning on Google Cloud",
+      "company": "Google Cloud skills Boost",
+      "description": "This course introduces the AI and machine learning (ML) offerings on Google Cloud that build both predictive and generative AI projects.",
+      "publicUrl": "https://www.cloudskillsboost.google/public_profiles/322ec3ae-cf41-4f43-86d1-88b995df5a63/badges/13671896?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share",
+      "skills": ["Machine Learning", "Google Cloud Plateform"],
+      "image": "introAIMLGoogleCloud"
+    },
+    {
       "date": "2024",
       "title": "AWS Educate Introduction to Generative AI",
       "company": "Amazon Web Services Training and Certification",
-      "description": "Completed training in generative artificial intelligence concepts and achieved required scores on post-course assessment",
+      "description": "Completed training in generative artificial intelligence concepts and achieved required scores on post-course assessment.",
       "publicUrl": "https://www.credly.com/badges/7a6ad0c8-9b15-4566-823a-99731460c5fa/public_url",
       "skills": ["AI", "AI and ML on AWS - Foundational", "AWS Cloud"],
       "image": "generativeIAFull"

@@ -14,6 +14,7 @@ import timelineData from "./jsons/my_timeline.json";
 import skillsData from "./jsons/my_skills.json";
 
 import generativeIAFull from "./img/aws-educate-introduction-to-generative-ai-full.png";
+import introAIMLGoogleCloud from "./img/Introduction-to-AI-and-Machine-Learning-on-Google-Cloud.png";
 import deepRace from "./img/aws-educate-machine-learning-deepracer.png";
 import mlFoundation from "./img/aws-educate-machine-learning-foundations.png";
 import ibmCloudAdvEs from "./img/ibm-cloud-advocate-essentials.png";
@@ -31,6 +32,7 @@ ReactGA4.initialize("G-XXXXXXXXXX");
 
 
 const imageMapping = {
+  introAIMLGoogleCloud: introAIMLGoogleCloud,
   generativeIAFull: generativeIAFull,
   mlFoundation: mlFoundation,
   deepRace: deepRace,
