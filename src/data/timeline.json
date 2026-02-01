@@ -1,0 +1,46 @@
+{
+  "timeline": [
+    {
+      "date": "May 2025 - Aug 2025",
+      "title": "Software Development Intern",
+      "company": "E.S.R.I. Inc.",
+      "description": [
+        "Automated end-to-end deployment pipeline for ArcGIS Enterprise on Jenkins, saving 10 hours",
+        "Designed an issue management system to track and optimize workflow, increasing efficiency by 50%"
+      ],
+      "skills": ["Jenkins", "ArcGIS Enterprise", "Windows Server"]
+    },
+    {
+      "date": "Sep 2022 - Jan 2024",
+      "title": "Staff Engineer",
+      "company": "IBM LABS",
+      "description": [
+        "Implemented IBM's Secret Manager on IaaS with SOC2 encryption, eliminating HSMs and saving $3 Million",
+        "Integrated IBM IAM with OpenID Connect for automated user permission management, cutting ticket turnaround by 90%",
+        "Integrated change data capture enabling metadata transfer, automating updates to SSOT and ServiceNow"
+      ],
+      "skills": ["Python", "AWS", "Docker", "Kubernetes", "LDAP"]
+    },
+    {
+      "date": "Jun 2021 - Aug 2022",
+      "title": "Full-Stack Developer",
+      "company": "Axiom IO",
+      "description": [
+        "Orchestrated deployment pipelines on Kubernetes, eliminating downtime to 0 seconds",
+        "Designed Sports and Game Aggregator Platforms managing ~14M weekly requests, reducing response time by 30%"
+      ],
+      "skills": ["Kubernetes", "Go Fiber", "PostgreSQL", "Redis"]
+    },
+    {
+      "date": "Dec 2018 - Jun 2021",
+      "title": "Software Developer",
+      "company": "Kuliza Technologies",
+      "description": [
+        "Led Educational Loan project, designing key modules and managing a team of four, improving efficiency by 30%",
+        "Implemented LDAP-based authentication and Celery queues for asynchronous processing",
+        "Created eMandate module removing manual EMI collection, saving $500K"
+      ],
+      "skills": ["Django", "Celery", "PostgreSQL", "LDAP"]
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+Introduction to Data Analytics in Google Cloud
+Earned Dec 10, 2025 EST
+
+Data Management and Storage in the Cloud
+Earned Dec 10, 2025 EST
+
+Data Transformation in the Cloud
+Earned Dec 10, 2025 EST
+
+The Power of Storytelling: How to Visualize Data in the Cloud
+Earned Dec 1, 2025 EST
+
+Put It All Together: Prepare for a Cloud Data Analyst Job
+Earned Nov 30, 2025 EST
+
+AI Infrastructure: Cloud TPUs
+Earned Oct 7, 2025 EDT
+
+AI Infrastructure: Cloud GPUs
+Earned Oct 7, 2025 EDT
+
+AI Infrastructure: Introduction to AI Hypercomputer
+Earned Oct 7, 2025 EDT
+
+Gen AI Agents: Transform Your Organization
+Earned May 4, 2025 EDT
+
+Gen AI Apps: Transform Your Work
+Earned May 4, 2025 EDT
+
+Gen AI: Navigate the Landscape
+Earned May 4, 2025 EDT
+
+Gen AI: Unlock Foundational Concepts
+Earned May 4, 2025 EDT
+
+Gen AI: Beyond the Chatbot
+Earned May 4, 2025 EDT
+
+Engineer Data for Predictive Modeling with BigQuery ML
+Earned Apr 30, 2025 EDT
+
+Create Generative AI Apps on Google Cloud
+Earned Apr 30, 2025 EDT
+
+DEPRECATED Build and Deploy Machine Learning Solutions on Vertex AI
+Earned Apr 30, 2025 EDT
+
+Create ML Models with BigQuery ML
+Earned Apr 24, 2025 EDT
+
+Manage Kubernetes in Google Cloud
+Earned Apr 20, 2025 EDT
+
+Put It All Together: Prepare for a Cloud Data Analyst Job
+Earned Apr 20, 2025 EDT
+
+Prepare Data for ML APIs on Google Cloud
+Earned Apr 14, 2025 EDT
+
+The Power of Storytelling: How to Visualize Data in the Cloud
+Earned Apr 13, 2025 EDT
+
+Build, Train and Deploy ML Models with Keras on Google Cloud
+Earned Mar 30, 2025 EDT
+
+Introduction to Data Analytics on Google Cloud
+Earned Mar 22, 2025 EDT
+
+Enterprise Search on Generative AI App Builder
+Earned Mar 18, 2025 EDT
+
+Responsible AI: Applying AI Principles with Google Cloud
+Earned Mar 18, 2025 EDT
+
+[DEPRECATED] The Skills Challenge at Next 2025
+Earned Mar 15, 2025 EDT
+
+Responsible AI for Developers: Fairness & Bias
+Earned Mar 9, 2025 EDT
+
+Responsible AI for Developers: Privacy & Safety
+Earned Mar 9, 2025 EDT
+
+Machine Learning Operations (MLOps) with Vertex AI: Model Evaluation
+Earned Mar 8, 2025 EST
+
+Responsible AI for Developers: Interpretability & Transparency
+Earned Mar 1, 2025 EST
+
+Introduction to Large Language Models
+Earned Feb 27, 2025 EST
+
+Machine Learning Operations (MLOps) for Generative AI
+Earned Feb 27, 2025 EST
+
+Introduction to Generative AI
+Earned Feb 26, 2025 EST
+
+Production Machine Learning Systems
+Earned Feb 26, 2025 EST
+
+Data Transformation in the Cloud
+Earned Feb 20, 2025 EST
+
+Machine Learning Operations (MLOps) with Vertex AI: Manage Features
+Earned Feb 15, 2025 EST
+
+Feature Engineering
+Earned Feb 12, 2025 EST
+
+Data Management and Storage in the Cloud
+Earned Feb 8, 2025 EST
+
+Machine Learning Operations (MLOps): Getting Started
+Earned Feb 5, 2025 EST
+
+Introduction to Data Analytics in Google Cloud
+Earned Jan 31, 2025 EST
+
+Working with Notebooks in Vertex AI
+Earned Jan 28, 2025 EST
+
+Introduction to AI and Machine Learning on Google Cloud
+Earned Jan 24, 2025 EST
+
+Professional Machine Learning Engineer Study Guide

@@ -1,0 +1,28 @@
+{
+  "faq": [{
+      "id": "backend",
+      "question": "What's your backend expertise?",
+      "answer": "Backend is my core strength. I have 6+ years building scalable systems with Python (Django, Flask, FastAPI), Golang (Go Fiber), and Java (Spring Boot). I've designed microservices, REST APIs, and handled high-traffic systems processing millions of requests."
+    },
+    {
+      "id": "frontend",
+      "question": "Do you have frontend development experience?",
+      "answer": "Yes! I have hands-on experience with React, TypeScript, and modern frontend tools like Vite. I've built responsive UIs and worked with component libraries. While my primary focus is backend, I'm comfortable working across the full stack."
+    },
+    {
+      "id": "cloud",
+      "question": "What cloud platforms have you worked with?",
+      "answer": "Extensive experience with AWS (EC2, S3, Lambda, RDS), IBM Cloud, and familiarity with Azure and GCP. I've implemented CI/CD pipelines, container orchestration with Kubernetes, and infrastructure as code with Terraform and Helm."
+    },
+    {
+      "id": "ai-ml",
+      "question": "Do you have AI/ML experience?",
+      "answer": "Yes! I work with LLMs, LangChain, RAG systems, and agentic AI workflows. I've built applications using OpenAI, Hugging Face Transformers, and local models like Llama. Currently exploring MCP (Model Context Protocol) and autonomous AI systems."
+    },
+    {
+      "id": "availability",
+      "question": "Are you open to new opportunities?",
+      "answer": "I'm always open to discussing interesting projects and opportunities. Currently pursuing my MS at CSU Fullerton while working. Feel free to reach out via email or LinkedIn!"
+    }
+  ]
+}

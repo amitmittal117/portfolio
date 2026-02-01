@@ -1,0 +1,98 @@
+{
+  "categories": [
+    {
+      "name": "Languages",
+      "icon": "💻",
+      "skills": [
+        { "name": "Python", "icon": "🐍" },
+        { "name": "Golang", "icon": "🔵" },
+        { "name": "Java", "icon": "☕" },
+        { "name": "JavaScript", "icon": "📜" },
+        { "name": "TypeScript", "icon": "💎" },
+        { "name": "Bash", "icon": "🖥️" },
+        { "name": "SQL", "icon": "📊" }
+      ]
+    },
+    {
+      "name": "Frameworks",
+      "icon": "🔧",
+      "skills": [
+        { "name": "Django", "icon": "🎸" },
+        { "name": "Flask", "icon": "🧪" },
+        { "name": "Spring Boot", "icon": "🌱" },
+        { "name": "Go Fiber", "icon": "🔷" },
+        { "name": "FastAPI", "icon": "⚡" },
+        { "name": "React", "icon": "⚛️" },
+        { "name": "Celery", "icon": "🥬" }
+      ]
+    },
+    {
+      "name": "Databases",
+      "icon": "🗄️",
+      "skills": [
+        { "name": "PostgreSQL", "icon": "🐘" },
+        { "name": "MongoDB", "icon": "🍃" },
+        { "name": "Redis", "icon": "🔴" },
+        { "name": "MySQL", "icon": "🐬" },
+        { "name": "Debezium", "icon": "📡" }
+      ]
+    },
+    {
+      "name": "Cloud",
+      "icon": "☁️",
+      "skills": [
+        { "name": "AWS", "icon": "☁️" },
+        { "name": "IBM Cloud", "icon": "🔵" },
+        { "name": "Azure", "icon": "🔷" },
+        { "name": "Google Cloud", "icon": "🌐" },
+        { "name": "ArcGIS Enterprise", "icon": "🗺️" }
+      ]
+    },
+    {
+      "name": "DevOps",
+      "icon": "🚀",
+      "skills": [
+        { "name": "Docker", "icon": "🐳" },
+        { "name": "Kubernetes", "icon": "☸️" },
+        { "name": "Helm", "icon": "⎈" },
+        { "name": "Jenkins", "icon": "🎺" },
+        { "name": "GitLab CI/CD", "icon": "🦊" },
+        { "name": "Ansible", "icon": "🅰️" },
+        { "name": "Terraform", "icon": "🏗️" }
+      ]
+    },
+    {
+      "name": "Monitoring",
+      "icon": "📊",
+      "skills": [
+        { "name": "Prometheus", "icon": "🔥" },
+        { "name": "Grafana", "icon": "📈" },
+        { "name": "ELK Stack", "icon": "🦌" }
+      ]
+    },
+    {
+      "name": "AI & ML",
+      "icon": "🤖",
+      "skills": [
+        { "name": "LLMs", "icon": "🧠" },
+        { "name": "LangChain", "icon": "🔗" },
+        { "name": "PyTorch", "icon": "🔥" },
+        { "name": "TensorFlow", "icon": "📈" },
+        { "name": "RAG", "icon": "📚" },
+        { "name": "Hugging Face", "icon": "🤗" }
+      ]
+    },
+    {
+      "name": "Tools",
+      "icon": "🛠️",
+      "skills": [
+        { "name": "Git", "icon": "📦" },
+        { "name": "Kafka", "icon": "📨" },
+        { "name": "LDAP", "icon": "🔐" },
+        { "name": "Swagger", "icon": "📋" },
+        { "name": "Linux", "icon": "🐧" },
+        { "name": "ServiceNow", "icon": "🎫" }
+      ]
+    }
+  ]
+}

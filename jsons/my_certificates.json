@@ -1,0 +1,127 @@
+{
+  "certificates": [
+    {
+      "date": "2025",
+      "title": "Introduction to AI and Machine Learning on Google Cloud",
+      "company": "Google Cloud skills Boost",
+      "description": "This course introduces the AI and machine learning (ML) offerings on Google Cloud that build both predictive and generative AI projects.",
+      "publicUrl": "https://www.cloudskillsboost.google/public_profiles/322ec3ae-cf41-4f43-86d1-88b995df5a63/badges/13671896?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share",
+      "skills": ["Machine Learning", "Google Cloud Plateform"],
+      "image": "introAIMLGoogleCloud"
+    },
+    {
+      "date": "2024",
+      "title": "AWS Educate Introduction to Generative AI",
+      "company": "Amazon Web Services Training and Certification",
+      "description": "Completed training in generative artificial intelligence concepts and achieved required scores on post-course assessment.",
+      "publicUrl": "https://www.credly.com/badges/7a6ad0c8-9b15-4566-823a-99731460c5fa/public_url",
+      "skills": ["AI", "AI and ML on AWS - Foundational", "AWS Cloud"],
+      "image": "generativeIAFull"
+    },
+    {
+      "date": "2024",
+      "title": "AWS Educate Machine Learning - DeepRacer",
+      "company": "Amazon Web Services Training and Certification",
+      "description": "Demonstrated reinforcement learning and AWS DeepRacer model building experience successfully.",
+      "publicUrl": "https://www.credly.com/badges/4b4f3224-4fb6-4ae8-93cd-d62ad1688508/public_url",
+      "skills": [
+        "AWS Cloud",
+        "AWS Cloud Computing",
+        "AWS DeepRacer",
+        "Machine Learning",
+        "Reinforcement Learning"
+      ],
+      "image": "deepRace"
+    },
+    {
+      "date": "2024",
+      "title": "AWS Educate Machine Learning Foundations",
+      "company": "Amazon Web Services Training and Certification",
+      "description": "Completed Machine Learning Foundations, demonstrating knowledge and problem-solving skills.",
+      "publicUrl": "https://www.credly.com/badges/0c281964-27af-4d31-9713-ff35695011ca/public_url",
+      "skills": ["Amazon Web Services (AWS)", "AWS Cloud", "ML"],
+      "image": "mlFoundation"
+    },
+    {
+      "date": "2023",
+      "title": "IBM Cloud Advocate Essentials",
+      "company": "IBM",
+      "description": "Gained foundational knowledge of IBM Cloud, covering services, benefits, and compliance.",
+      "publicUrl": "https://www.credly.com/badges/56f2524b-cc07-4c0d-b52f-0ff438b3601a/public_url",
+      "skills": [
+        "Cloud",
+        "Cloud Adoption",
+        "Cloud Advocate",
+        "Cloud Essentials",
+        "Cloud Migration",
+        "Cloud Technology",
+        "IBM Center for Cloud Training",
+        "IBM Cloud",
+        "IBM Cloud Account Types and Support Plans",
+        "IBM Cloud Platform and Interface",
+        "IBM Cloud Regulatory and Compliance Standards",
+        "IBM Cloud Service and Deployment Models",
+        "ICCT",
+        "Identity And Access Management",
+        "Introduction To Cloud",
+        "PWID-B0566900",
+        "Structure of IBM Cloud",
+        "Virtualization"
+      ],
+      "image": "ibmCloudAdvEs"
+    },
+    {
+      "date": "2023",
+      "title": "IBM Certified Advocate - Cloud v2",
+      "company": "IBM Professional Certification",
+      "description": "Cloud computing basics, services, deployment models, and IBM Cloud essentials",
+      "publicUrl": "https://www.credly.com/badges/31198b5d-07ed-41fb-b4cb-65c3275057b4/public_url",
+      "skills": [
+        "Access Management",
+        "Advocate",
+        "Associate",
+        "Cloud",
+        "Cloud Adoption",
+        "Cloud Essentials",
+        "Cloud Migration",
+        "Cloud Platform",
+        "Cloud Regulatory and Compliance Standards",
+        "Cloud Technology",
+        "IBM Center for Cloud Training",
+        "IBM Cloud Service and Deployment Models",
+        "PWID-C9003700",
+        "Virtualization"
+      ],
+      "image": "ibmCloudAdvV2"
+    },
+    {
+      "date": "2022",
+      "title": "Security and Privacy by Design Foundations",
+      "company": "IBM",
+      "description": "Covers SPbD@IBM foundations, including security practices, privacy, and tools.",
+      "publicUrl": "https://www.credly.com/badges/e1956d72-46ac-4a05-9791-a9d379a42f32/public_url",
+      "skills": ["Security"],
+      "image": "ibmSecurityFoundations"
+    },
+    {
+      "date": "2022",
+      "title": "Enterprise Design Thinking Practitioner",
+      "company": "IBM",
+      "description": "The earner has acquired knowledge of applying Enterprise Design Thinking and its value. As a Practitioner, the badge earner finds opportunities to try it out in their every day work.",
+      "publicUrl": "https://www.credly.com/badges/43a12a57-84e6-468f-9f8e-a828c7dd330f/public_url",
+      "skills": [
+        "Design",
+        "Empathy",
+        "Experience Design",
+        "Ideation",
+        "PWID-B0495200",
+        "User-Centered Design",
+        "User-Centric",
+        "User Experience",
+        "User Research",
+        "UX"
+      ],
+      "image": "ibmEnterpriseDesign"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "education": [
+    {
+      "degree": "Master of Science in Computer Science",
+      "school": "California State University, Fullerton",
+      "date": "2023 - 2025",
+      "description": [
+        "Focusing on Artificial Intelligence and Machine Learning.",
+        "GPA: 3.8/4.0"
+      ],
+      "skills": ["Algorithms", "Machine Learning", "Distributed Systems"]
+    },
+    {
+      "degree": "Bachelor of Technology in Computer Science",
+      "school": "Previous University",
+      "date": "2018 - 2022",
+      "description": [
+        "Graduated with Honors."
+      ],
+      "skills": ["Data Structures", "Web Development", "Database Management"]
+    }
+  ]
+}

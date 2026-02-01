@@ -1,0 +1,76 @@
+{
+  "timeline": [
+    {
+      "date": "2025-2025",
+      "title": "Software Development Intern",
+      "company": "ESRI Inc",
+      "description": [
+        "Automated the end-to-end deployment pipeline for ArcGIS Enterprise on Jenkins, saving 10 hours of manual work",
+        "Developed an issue management system to enhance workflow tracking, boosting user efficiency by 50%",
+        "Collaborated with cross-functional teams to ensure seamless integration and deployment processes at Esri."
+      ],
+      "skills": ["Geographic Information Systems (GIS)", "Powershell", "Python Programming"]
+    },
+    {
+      "date": "2024-2025",
+      "title": "Teaching Associate",
+      "company": "California State University, Fullerton",
+      "description": [
+        "Designed and delivered course material for Python programming, fostering student learning",
+        "Led Engaging Lab Sessions and assignments, with automated Grading saving 50% of the time"
+      ],
+      "skills": ["Python Programming"]
+    },
+    {
+      "date": "2024-2024",
+      "title": "Research Assistant",
+      "company": "California State University, Fullerton",
+      "description": [
+        "Conducted research on disaster management papers to assess aftermath and provide safety measures",
+        "Developed an application to guide users to the nearest safe zone in case of a disaster"
+      ],
+      "skills": ["Mobile Application Development", "Disaster Management"]
+    },
+    {
+      "date": "2022-2024",
+      "title": "Software Engineer",
+      "company": "IBM LABS",
+      "description": [
+        "Implemented IBM's Secret Manager on PaaS with SOC2 compliant encryption, eliminating HSMs from data centers and reducing migration time by 95%, saving $3 Million",
+        "Integrated IBM IAM (Blue Groups) with LDAP for automated user permission management, reducing manual intervention and cutting ticket turnaround time by 90%",
+        "Integrated Microservices with Debezium to enable real-time data transfer and auditing for data centers, automating updates to SSOT and SNOW"
+      ],
+      "skills": ["Python", "Django", "Java", "Spring Boot", "Postgres"]
+    },
+    {
+      "date": "2021-2022",
+      "title": "Full Stack Developer",
+      "company": "Axiom IO",
+      "description": [
+        "Designed and architected a Sports Aggregator Platform in Java Spring Boot, efficiently managing ~14M weekly sports feed requests with a segregated layered architecture, reducing response time by 30%",
+        "Built CI/CD pipelines for dev, stage, and prod environments using Amazon CodePipeline, cutting release time by 50% and saving $200K annually in deployment costs",
+        "Developed Golang REST APIs for major game providers (Ezugi, DreamCasino, SuperSpade, Pragmatic Play), helping $2M+ in game transactions, reducing downtime by 40%, and saving $150K in operational costs"
+      ],
+      "skills": ["Golang", "MongoDB", "AWS", "CI/CD"]
+    },
+    {
+      "date": "2018-2021",
+      "title": "Software Developer",
+      "company": "Kuliza Technologies",
+      "description": [
+        "Led Educational Loan project, designing key modules like EMI automation and account validation, managing a team of four, and improving process efficiency by 30%",
+        "Optimized SQL queries, cutting execution time by 88%, and built an auto trigger system reducing API downtime by 95% with 10% improved audit accuracy"
+      ],
+      "skills": ["Python", "Django", "Java", "BPM", "SQL"]
+    },
+    {
+      "date": "2017-2018",
+      "title": "Software Developer",
+      "company": "Digital Marketing Systems",
+      "description": [
+        "Developed backend infrastructure in Flask for the company website with REST API (JSON) communication, improving SEO rankings by 25%, and built Android ERP modules, enhancing mobile adaptation by 30%"
+      ],
+      "skills": ["Python", "Flask", "Android", "REST API"]
+    }
+  ]
+}

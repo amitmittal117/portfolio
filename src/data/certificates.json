@@ -1,0 +1,475 @@
+{
+  "certificates": [
+    {
+      "date": "2025",
+      "title": "Introduction to AI and Machine Learning on Google Cloud",
+      "company": "Google Cloud skills Boost",
+      "description": "This course introduces the AI and machine learning (ML) offerings on Google Cloud that build both predictive and generative AI projects.",
+      "publicUrl": "https://www.cloudskillsboost.google/public_profiles/322ec3ae-cf41-4f43-86d1-88b995df5a63/badges/13671896?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share",
+      "skills": [
+        "Machine Learning",
+        "Google Cloud Platform"
+      ],
+      "image": "./img/Introduction-to-AI-and-Machine-Learning-on-Google-Cloud.png"
+    },
+    {
+      "date": "2024",
+      "title": "AWS Educate Introduction to Generative AI",
+      "company": "Amazon Web Services Training and Certification",
+      "description": "Completed training in generative artificial intelligence concepts and achieved required scores on post-course assessment.",
+      "publicUrl": "https://www.credly.com/badges/7a6ad0c8-9b15-4566-823a-99731460c5fa/public_url",
+      "skills": [
+        "AI",
+        "AI and ML on AWS",
+        "AWS Cloud"
+      ],
+      "image": "./img/aws-educate-introduction-to-generative-ai-full.png"
+    },
+    {
+      "date": "2024",
+      "title": "AWS Educate Machine Learning - DeepRacer",
+      "company": "Amazon Web Services Training and Certification",
+      "description": "Demonstrated reinforcement learning and AWS DeepRacer model building experience successfully.",
+      "publicUrl": "https://www.credly.com/badges/4b4f3224-4fb6-4ae8-93cd-d62ad1688508/public_url",
+      "skills": [
+        "AWS DeepRacer",
+        "Machine Learning",
+        "Reinforcement Learning"
+      ],
+      "image": "./img/aws-educate-machine-learning-deepracer.png"
+    },
+    {
+      "date": "2024",
+      "title": "AWS Educate Machine Learning Foundations",
+      "company": "Amazon Web Services Training and Certification",
+      "description": "Completed Machine Learning Foundations, demonstrating knowledge and problem-solving skills.",
+      "publicUrl": "https://www.credly.com/badges/0c281964-27af-4d31-9713-ff35695011ca/public_url",
+      "skills": [
+        "Amazon Web Services (AWS)",
+        "AWS Cloud",
+        "ML"
+      ],
+      "image": "./img/aws-educate-machine-learning-foundations.png"
+    },
+    {
+      "date": "2023",
+      "title": "IBM Cloud Advocate Essentials",
+      "company": "IBM",
+      "description": "Gained foundational knowledge of IBM Cloud, covering services, benefits, and compliance.",
+      "publicUrl": "https://www.credly.com/badges/56f2524b-cc07-4c0d-b52f-0ff438b3601a/public_url",
+      "skills": [
+        "Cloud",
+        "IBM Cloud",
+        "Cloud Migration"
+      ],
+      "image": "./img/ibm-cloud-advocate-essentials.png"
+    },
+    {
+      "date": "2023",
+      "title": "IBM Certified Advocate - Cloud v2",
+      "company": "IBM Professional Certification",
+      "description": "Cloud computing basics, services, deployment models, and IBM Cloud essentials",
+      "publicUrl": "https://www.credly.com/badges/31198b5d-07ed-41fb-b4cb-65c3275057b4/public_url",
+      "skills": [
+        "Cloud",
+        "Cloud Platform",
+        "Virtualization"
+      ],
+      "image": "./img/ibm-certified-advocate-cloud-v2.png"
+    },
+    {
+      "date": "2022",
+      "title": "Security and Privacy by Design Foundations",
+      "company": "IBM",
+      "description": "Covers SPbD@IBM foundations, including security practices, privacy, and tools.",
+      "publicUrl": "https://www.credly.com/badges/e1956d72-46ac-4a05-9791-a9d379a42f32/public_url",
+      "skills": [
+        "Security",
+        "Privacy"
+      ],
+      "image": "./img/security-and-privacy-by-design-foundations.png"
+    },
+    {
+      "date": "2022",
+      "title": "Enterprise Design Thinking Practitioner",
+      "company": "IBM",
+      "description": "The earner has acquired knowledge of applying Enterprise Design Thinking and its value. As a Practitioner, the badge earner finds opportunities to try it out in their every day work.",
+      "publicUrl": "https://www.credly.com/badges/43a12a57-84e6-468f-9f8e-a828c7dd330f/public_url",
+      "skills": [
+        "Design",
+        "User Experience",
+        "UX"
+      ],
+      "image": "./img/enterprise-design-thinking-practitioner.png"
+    },
+    {
+      "date": "Dec 10, 2025",
+      "title": "Introduction to Data Analytics in Google Cloud",
+      "company": "Google Cloud",
+      "description": "Earned Dec 10, 2025",
+      "publicUrl": "#",
+      "skills": [],
+      "image": "./img/google-cloud-generic.png"
+    },
+    {
+      "date": "Dec 10, 2025",
+      "title": "Data Management and Storage in the Cloud",
+      "company": "Google Cloud",
+      "description": "Earned Dec 10, 2025",
+      "publicUrl": "#",
+      "skills": [],
+      "image": "./img/google-cloud-generic.png"
+    },
+    {
+      "date": "Dec 10, 2025",
+      "title": "Data Transformation in the Cloud",
+      "company": "Google Cloud",
+      "description": "Earned Dec 10, 2025",
+      "publicUrl": "#",
+      "skills": [],
+      "image": "./img/google-cloud-generic.png"
+    },
+    {
+      "date": "Dec 1, 2025",
+      "title": "The Power of Storytelling: How to Visualize Data in the Cloud",
+      "company": "Google Cloud",
+      "description": "Earned Dec 1, 2025",
+      "publicUrl": "#",
+      "skills": [],
+      "image": "./img/google-cloud-generic.png"
+    },
+    {
+      "date": "Nov 30, 2025",
+      "title": "Put It All Together: Prepare for a Cloud Data Analyst Job",
+      "company": "Google Cloud",
+      "description": "Earned Nov 30, 2025",
+      "publicUrl": "#",
+      "skills": [],
+      "image": "./img/google-cloud-generic.png"
+    },
+    {
+      "date": "Oct 7, 2025",
+      "title": "AI Infrastructure: Cloud TPUs",
+      "company": "Google Cloud",
+      "description": "Earned Oct 7, 2025",
+      "publicUrl": "#",
+      "skills": [],
+      "image": "./img/google-cloud-generic.png"
+    },
+    {
+      "date": "Oct 7, 2025",
+      "title": "AI Infrastructure: Cloud GPUs",
+      "company": "Google Cloud",
+      "description": "Earned Oct 7, 2025",
+      "publicUrl": "#",
+      "skills": [],
+      "image": "./img/google-cloud-generic.png"
+    },
+    {
+      "date": "Oct 7, 2025",
+      "title": "AI Infrastructure: Introduction to AI Hypercomputer",
+      "company": "Google Cloud",
+      "description": "Earned Oct 7, 2025",
+      "publicUrl": "#",
+      "skills": [],
+      "image": "./img/google-cloud-generic.png"
+    },
+    {
+      "date": "May 4, 2025",
+      "title": "Gen AI Agents: Transform Your Organization",
+      "company": "Google Cloud",
+      "description": "Earned May 4, 2025",
+      "publicUrl": "#",
+      "skills": [],
+      "image": "./img/google-cloud-generic.png"
+    },
+    {
+      "date": "May 4, 2025",
+      "title": "Gen AI Apps: Transform Your Work",
+      "company": "Google Cloud",
+      "description": "Earned May 4, 2025",
+      "publicUrl": "#",
+      "skills": [],
+      "image": "./img/google-cloud-generic.png"
+    },
+    {
+      "date": "May 4, 2025",
+      "title": "Gen AI: Navigate the Landscape",
+      "company": "Google Cloud",
+      "description": "Earned May 4, 2025",
+      "publicUrl": "#",
+      "skills": [],
+      "image": "./img/google-cloud-generic.png"
+    },
+    {
+      "date": "May 4, 2025",
+      "title": "Gen AI: Unlock Foundational Concepts",
+      "company": "Google Cloud",
+      "description": "Earned May 4, 2025",
+      "publicUrl": "#",
+      "skills": [],
+      "image": "./img/google-cloud-generic.png"
+    },
+    {
+      "date": "May 4, 2025",
+      "title": "Gen AI: Beyond the Chatbot",
+      "company": "Google Cloud",
+      "description": "Earned May 4, 2025",
+      "publicUrl": "#",
+      "skills": [],
+      "image": "./img/google-cloud-generic.png"
+    },
+    {
+      "date": "Apr 30, 2025",
+      "title": "Engineer Data for Predictive Modeling with BigQuery ML",
+      "company": "Google Cloud",
+      "description": "Earned Apr 30, 2025",
+      "publicUrl": "#",
+      "skills": [],
+      "image": "./img/google-cloud-generic.png"
+    },
+    {
+      "date": "Apr 30, 2025",
+      "title": "Create Generative AI Apps on Google Cloud",
+      "company": "Google Cloud",
+      "description": "Earned Apr 30, 2025",
+      "publicUrl": "#",
+      "skills": [],
+      "image": "./img/google-cloud-generic.png"
+    },
+    {
+      "date": "Apr 30, 2025",
+      "title": "DEPRECATED Build and Deploy Machine Learning Solutions on Vertex AI",
+      "company": "Google Cloud",
+      "description": "Earned Apr 30, 2025",
+      "publicUrl": "#",
+      "skills": [],
+      "image": "./img/google-cloud-generic.png"
+    },
+    {
+      "date": "Apr 24, 2025",
+      "title": "Create ML Models with BigQuery ML",
+      "company": "Google Cloud",
+      "description": "Earned Apr 24, 2025",
+      "publicUrl": "#",
+      "skills": [],
+      "image": "./img/google-cloud-generic.png"
+    },
+    {
+      "date": "Apr 20, 2025",
+      "title": "Manage Kubernetes in Google Cloud",
+      "company": "Google Cloud",
+      "description": "Earned Apr 20, 2025",
+      "publicUrl": "#",
+      "skills": [],
+      "image": "./img/google-cloud-generic.png"
+    },
+    {
+      "date": "Apr 20, 2025",
+      "title": "Put It All Together: Prepare for a Cloud Data Analyst Job",
+      "company": "Google Cloud",
+      "description": "Earned Apr 20, 2025",
+      "publicUrl": "#",
+      "skills": [],
+      "image": "./img/google-cloud-generic.png"
+    },
+    {
+      "date": "Apr 14, 2025",
+      "title": "Prepare Data for ML APIs on Google Cloud",
+      "company": "Google Cloud",
+      "description": "Earned Apr 14, 2025",
+      "publicUrl": "#",
+      "skills": [],
+      "image": "./img/google-cloud-generic.png"
+    },
+    {
+      "date": "Apr 13, 2025",
+      "title": "The Power of Storytelling: How to Visualize Data in the Cloud",
+      "company": "Google Cloud",
+      "description": "Earned Apr 13, 2025",
+      "publicUrl": "#",
+      "skills": [],
+      "image": "./img/google-cloud-generic.png"
+    },
+    {
+      "date": "Mar 30, 2025",
+      "title": "Build, Train and Deploy ML Models with Keras on Google Cloud",
+      "company": "Google Cloud",
+      "description": "Earned Mar 30, 2025",
+      "publicUrl": "#",
+      "skills": [],
+      "image": "./img/google-cloud-generic.png"
+    },
+    {
+      "date": "Mar 22, 2025",
+      "title": "Introduction to Data Analytics on Google Cloud",
+      "company": "Google Cloud",
+      "description": "Earned Mar 22, 2025",
+      "publicUrl": "#",
+      "skills": [],
+      "image": "./img/google-cloud-generic.png"
+    },
+    {
+      "date": "Mar 18, 2025",
+      "title": "Enterprise Search on Generative AI App Builder",
+      "company": "Google Cloud",
+      "description": "Earned Mar 18, 2025",
+      "publicUrl": "#",
+      "skills": [],
+      "image": "./img/google-cloud-generic.png"
+    },
+    {
+      "date": "Mar 18, 2025",
+      "title": "Responsible AI: Applying AI Principles with Google Cloud",
+      "company": "Google Cloud",
+      "description": "Earned Mar 18, 2025",
+      "publicUrl": "#",
+      "skills": [],
+      "image": "./img/google-cloud-generic.png"
+    },
+    {
+      "date": "Mar 15, 2025",
+      "title": "[DEPRECATED] The Skills Challenge at Next 2025",
+      "company": "Google Cloud",
+      "description": "Earned Mar 15, 2025",
+      "publicUrl": "#",
+      "skills": [],
+      "image": "./img/google-cloud-generic.png"
+    },
+    {
+      "date": "Mar 9, 2025",
+      "title": "Responsible AI for Developers: Fairness & Bias",
+      "company": "Google Cloud",
+      "description": "Earned Mar 9, 2025",
+      "publicUrl": "#",
+      "skills": [],
+      "image": "./img/google-cloud-generic.png"
+    },
+    {
+      "date": "Mar 9, 2025",
+      "title": "Responsible AI for Developers: Privacy & Safety",
+      "company": "Google Cloud",
+      "description": "Earned Mar 9, 2025",
+      "publicUrl": "#",
+      "skills": [],
+      "image": "./img/google-cloud-generic.png"
+    },
+    {
+      "date": "Mar 8, 2025",
+      "title": "Machine Learning Operations (MLOps) with Vertex AI: Model Evaluation",
+      "company": "Google Cloud",
+      "description": "Earned Mar 8, 2025",
+      "publicUrl": "#",
+      "skills": [],
+      "image": "./img/google-cloud-generic.png"
+    },
+    {
+      "date": "Mar 1, 2025",
+      "title": "Responsible AI for Developers: Interpretability & Transparency",
+      "company": "Google Cloud",
+      "description": "Earned Mar 1, 2025",
+      "publicUrl": "#",
+      "skills": [],
+      "image": "./img/google-cloud-generic.png"
+    },
+    {
+      "date": "Feb 27, 2025",
+      "title": "Introduction to Large Language Models",
+      "company": "Google Cloud",
+      "description": "Earned Feb 27, 2025",
+      "publicUrl": "#",
+      "skills": [],
+      "image": "./img/google-cloud-generic.png"
+    },
+    {
+      "date": "Feb 27, 2025",
+      "title": "Machine Learning Operations (MLOps) for Generative AI",
+      "company": "Google Cloud",
+      "description": "Earned Feb 27, 2025",
+      "publicUrl": "#",
+      "skills": [],
+      "image": "./img/google-cloud-generic.png"
+    },
+    {
+      "date": "Feb 26, 2025",
+      "title": "Introduction to Generative AI",
+      "company": "Google Cloud",
+      "description": "Earned Feb 26, 2025",
+      "publicUrl": "#",
+      "skills": [],
+      "image": "./img/google-cloud-generic.png"
+    },
+    {
+      "date": "Feb 26, 2025",
+      "title": "Production Machine Learning Systems",
+      "company": "Google Cloud",
+      "description": "Earned Feb 26, 2025",
+      "publicUrl": "#",
+      "skills": [],
+      "image": "./img/google-cloud-generic.png"
+    },
+    {
+      "date": "Feb 20, 2025",
+      "title": "Data Transformation in the Cloud",
+      "company": "Google Cloud",
+      "description": "Earned Feb 20, 2025",
+      "publicUrl": "#",
+      "skills": [],
+      "image": "./img/google-cloud-generic.png"
+    },
+    {
+      "date": "Feb 15, 2025",
+      "title": "Machine Learning Operations (MLOps) with Vertex AI: Manage Features",
+      "company": "Google Cloud",
+      "description": "Earned Feb 15, 2025",
+      "publicUrl": "#",
+      "skills": [],
+      "image": "./img/google-cloud-generic.png"
+    },
+    {
+      "date": "Feb 12, 2025",
+      "title": "Feature Engineering",
+      "company": "Google Cloud",
+      "description": "Earned Feb 12, 2025",
+      "publicUrl": "#",
+      "skills": [],
+      "image": "./img/google-cloud-generic.png"
+    },
+    {
+      "date": "Feb 8, 2025",
+      "title": "Data Management and Storage in the Cloud",
+      "company": "Google Cloud",
+      "description": "Earned Feb 8, 2025",
+      "publicUrl": "#",
+      "skills": [],
+      "image": "./img/google-cloud-generic.png"
+    },
+    {
+      "date": "Feb 5, 2025",
+      "title": "Machine Learning Operations (MLOps): Getting Started",
+      "company": "Google Cloud",
+      "description": "Earned Feb 5, 2025",
+      "publicUrl": "#",
+      "skills": [],
+      "image": "./img/google-cloud-generic.png"
+    },
+    {
+      "date": "Jan 31, 2025",
+      "title": "Introduction to Data Analytics in Google Cloud",
+      "company": "Google Cloud",
+      "description": "Earned Jan 31, 2025",
+      "publicUrl": "#",
+      "skills": [],
+      "image": "./img/google-cloud-generic.png"
+    },
+    {
+      "date": "Jan 28, 2025",
+      "title": "Working with Notebooks in Vertex AI",
+      "company": "Google Cloud",
+      "description": "Earned Jan 28, 2025",
+      "publicUrl": "#",
+      "skills": [],
+      "image": "./img/google-cloud-generic.png"
+    }
+  ]
+}

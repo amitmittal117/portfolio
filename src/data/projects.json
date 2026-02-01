@@ -1,0 +1,40 @@
+{
+  "projects": [
+    {
+      "title": "Multi-Layered Agentic AI Systems for Autonomous Work Orchestration",
+      "tech": "OpenAI + FastAPI",
+      "description": [
+        "Achieved ~60% reduction in project planning time and ~40% improvement in execution consistency through a hierarchical agentic architecture orchestrating 3+ LLMs."
+      ],
+      "skills": ["Agentic AI", "OpenAI", "FastAPI", "LLMs"],
+      "link": "#"
+    },
+    {
+      "title": "URL Shortener using Model Context Protocol (MCP)",
+      "tech": "Python + Kubernetes",
+      "description": [
+        "Designed the system with scalable FastMCP tools and clean HTTP routing deployed on Kubernetes on MicroK8s."
+      ],
+      "skills": ["MCP", "Python", "Kubernetes", "MicroK8s", "FastMCP"],
+      "link": "#"
+    },
+    {
+      "title": "Agentic AI Workflow Automation",
+      "tech": "OpenHands + Kubernetes",
+      "description": [
+        "Orchestrated an agentic AI workflow integrating OpenHands with Llama 3.2 and Kubernetes for automated task execution."
+      ],
+      "skills": ["OpenHands", "Llama 3.2", "Kubernetes", "Agentic AI"],
+      "link": "#"
+    },
+    {
+      "title": "JSON to TOON Converter",
+      "tech": "Full-Stack Data Optimization",
+      "description": [
+        "Built a full-stack JSON to TOON conversion platform achieving ~40% payload size reduction, exposing REST APIs and a web UI."
+      ],
+      "skills": ["Full-Stack", "REST API", "Data Optimization", "Web UI"],
+      "link": "#"
+    }
+  ]
+}
