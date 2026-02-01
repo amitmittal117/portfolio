@@ -61,7 +61,7 @@ export function Blog() {
     return (
         <section id="blog" className="section border-t">
             <div className="container">
-                <h2 className="section-title">Blog</h2>
+                <h2 className="section-title text-center sm:text-left">Blog</h2>
 
                 <div className="space-y-4">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">

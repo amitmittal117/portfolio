@@ -2,6 +2,7 @@ import './index.css';
 import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
 import ScrollToTop from './components/layout/ScrollToTop';
+import MobileDock from './components/layout/MobileDock';
 import { ScrollProgress } from '@/components/ui/scroll-progress';
 import Hero from './components/sections/Hero';
 import Skills from './components/sections/Skills';
@@ -29,6 +30,7 @@ function App() {
       </main>
       <Footer />
       <ScrollToTop />
+      <MobileDock />
     </div>
   );
 }

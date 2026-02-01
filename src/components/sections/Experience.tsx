@@ -8,7 +8,7 @@ export function Experience() {
     return (
         <section id="experience" className="section border-t">
             <div className="container">
-                <h2 className="section-title">Experience</h2>
+                <h2 className="section-title text-center sm:text-left">Experience</h2>
 
                 <div className="grid gap-4">
                     {timeline.map((item, index) => (

@@ -80,7 +80,7 @@ export function Certificates() {
     return (
         <section id="certificates" className="section border-t overflow-hidden">
             <div className="container relative w-full">
-                <h2 className="section-title mb-8">Certifications</h2>
+                <h2 className="section-title mb-8 text-center sm:text-left">Certifications</h2>
 
                 <div className="relative flex flex-col items-center justify-center overflow-hidden">
                     <Marquee pauseOnHover className="[--duration:150s]">

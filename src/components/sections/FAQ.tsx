@@ -18,7 +18,7 @@ export function FAQ() {
     return (
         <section id="faq" className="section border-t">
             <div className="container">
-                <h2 className="section-title">FAQ</h2>
+                <h2 className="section-title text-center sm:text-left">FAQ</h2>
 
                 <Accordion type="single" collapsible defaultValue="backend">
                     {faq.map((item, index) => {
