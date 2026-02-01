@@ -3,7 +3,7 @@ import { profile } from '../../data';
 import { ProgressiveBlur } from '@/components/ui/progressive-blur';
 import { AnimatedGridPattern } from '@/components/ui/animated-grid-pattern';
 import { TypingAnimation } from '@/components/ui/typing-animation';
-import { Highlighter } from '@/components/ui/highlighter';
+import { RotatingTitle } from '@/components/ui/rotating-title';
 import { BlurFade } from '@/components/ui/blur-fade';
 import { Dock, DockIcon } from '@/components/ui/dock';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
@@ -59,14 +59,14 @@ export function Hero() {
                     </BlurFade>
 
                     <BlurFade delay={0.3}>
-                        <p className="text-xl sm:text-2xl font-semibold text-foreground mb-2 sm:mb-3">
-                            {/* Hide highlighter on mobile, show plain text */}
-                            <span className="sm:hidden">{profile.title}</span>
-                            <span className="hidden sm:inline">
-                                <Highlighter action="highlight" color="hsl(var(--muted-foreground))">
-                                    {profile.title}
-                                </Highlighter>
-                            </span>
+                        <p className="text-xl sm:text-2xl font-semibold text-foreground mb-2 sm:mb-3 h-8 sm:h-10">
+                            <RotatingTitle
+                                titles={profile.titles}
+                                typingSpeed={80}
+                                deletingSpeed={40}
+                                pauseDuration={2500}
+                                className="text-muted-foreground font-bold"
+                            />
                         </p>
                     </BlurFade>
 

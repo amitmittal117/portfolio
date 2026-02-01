@@ -11,7 +11,7 @@ export function Skills() {
                 <div className="space-y-6">
                     {skillsCategories.map((category, index) => (
                         <BlurFade key={category.name} delay={0.25 + index * 0.05}>
-                            <div className="flex flex-col sm:flex-row sm:items-start gap-2 sm:gap-4">
+                            <div className="flex flex-col sm:flex-row sm:items-start gap-3 sm:gap-4">
                                 <span className="text-base sm:text-lg font-semibold text-muted-foreground sm:w-32 shrink-0 flex items-center gap-2">
                                     <span>{category.icon}</span>
                                     {category.name}

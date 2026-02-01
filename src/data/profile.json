@@ -1,9 +1,14 @@
 {
   "name": "Amit Mittal",
-  "title": "Software Engineer",
+  "titles": [
+    "Software Engineer",
+    "AI Engineer",
+    "MLOps Engineer",
+    "Backend Developer"
+  ],
   "tagline": "Staff Engineer with 6+ years of experience in backend development, cloud infrastructure, DevOps, and AI/ML systems.",
   "bio": "Building scalable systems, automating workflows, and exploring agentic AI. Currently pursuing MS in Computer Science at CSU Fullerton.",
-  "email": "amitarmittal@gmail.com",
+  "email": "amitmittal@gmail.com",
   "location": "San Jose, CA",
   "social": [
     { "name": "GitHub", "url": "https://github.com/amitmittal117", "icon": "github" },
