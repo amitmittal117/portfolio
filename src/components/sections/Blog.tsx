@@ -1,20 +1,11 @@
-
 import { useState, useEffect } from 'react';
+import { ArrowRight, Calendar, X, ChevronLeft } from 'lucide-react';
 import ReactMarkdown from 'react-markdown';
-import { ArrowRight, Calendar, X } from 'lucide-react';
 import { blogPosts } from '../../data';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { BlurFade } from '@/components/ui/blur-fade';
-import {
-    Breadcrumb,
-    BreadcrumbItem,
-    BreadcrumbLink,
-    BreadcrumbList,
-    BreadcrumbPage,
-    BreadcrumbSeparator,
-} from "@/components/ui/breadcrumb";
 
 interface BlogPost {
     id: string;
@@ -22,7 +13,26 @@ interface BlogPost {
     tags: string[];
     readTime: string;
     excerpt: string;
+    date?: string;
 }
+
+// Tag color mapping - minimal and consistent
+const getTagColor = (tag: string) => {
+    const tagLower = tag.toLowerCase();
+    if (tagLower.includes('security') || tagLower.includes('cyber')) {
+        return 'bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border-emerald-500/20';
+    }
+    if (tagLower.includes('health') || tagLower.includes('care')) {
+        return 'bg-rose-500/10 text-rose-600 dark:text-rose-400 border-rose-500/20';
+    }
+    if (tagLower.includes('enterprise') || tagLower.includes('business')) {
+        return 'bg-violet-500/10 text-violet-600 dark:text-violet-400 border-violet-500/20';
+    }
+    if (tagLower.includes('telecom') || tagLower.includes('mobile')) {
+        return 'bg-sky-500/10 text-sky-600 dark:text-sky-400 border-sky-500/20';
+    }
+    return 'bg-slate-500/10 text-slate-600 dark:text-slate-400 border-slate-500/20';
+};
 
 export function Blog() {
     const [selectedPost, setSelectedPost] = useState<BlogPost | null>(null);
@@ -63,130 +73,182 @@ export function Blog() {
             <div className="container">
                 <h2 className="section-title text-center sm:text-left">Blog</h2>
 
-                <div className="space-y-4">
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-                        {blogPosts.map((post, index) => (
-                            <BlurFade key={post.id} delay={0.1 + index * 0.05}>
-                                <Card
-                                    className="h-full hover:shadow-lg hover:border-primary/50 transition-all cursor-pointer border-muted/60 group relative overflow-hidden"
-                                    onClick={() => openPost(post)}
-                                >
-                                    <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity" />
-                                    <CardHeader>
-                                        <div className="flex items-center justify-between mb-2">
-                                            <div className="flex gap-2">
-                                                {post.tags.slice(0, 2).map((tag, i) => {
-                                                    const colors = [
-                                                        "bg-blue-500/10 text-blue-500 border-blue-500/20",
-                                                        "bg-purple-500/10 text-purple-500 border-purple-500/20",
-                                                        "bg-green-500/10 text-green-500 border-green-500/20",
-                                                        "bg-orange-500/10 text-orange-500 border-orange-500/20",
-                                                    ];
-                                                    const colorClass = colors[i % colors.length];
-                                                    return (
-                                                        <Badge key={tag} variant="secondary" className={`text-xs border ${colorClass}`}>
-                                                            {tag}
-                                                        </Badge>
-                                                    );
-                                                })}
-                                            </div>
-                                            <span className="text-xs text-muted-foreground flex items-center gap-1">
-                                                <Calendar className="w-3 h-3" />
-                                                {post.readTime}
-                                            </span>
+                {/* All Posts in Grid */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+                    {blogPosts.map((post, index) => (
+                        <BlurFade key={post.id} delay={0.1 + index * 0.05}>
+                            <Card
+                                className="h-full group relative overflow-hidden cursor-pointer border-muted/60 hover:border-primary/40 transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5"
+                                onClick={() => openPost(post)}
+                            >
+                                <CardHeader className="pb-3">
+                                    <div className="flex items-center justify-between mb-3">
+                                        <div className="flex gap-2 flex-wrap">
+                                            {post.tags.slice(0, 2).map((tag) => (
+                                                <Badge
+                                                    key={tag}
+                                                    variant="secondary"
+                                                    className={`text-xs border ${getTagColor(tag)}`}
+                                                >
+                                                    {tag}
+                                                </Badge>
+                                            ))}
                                         </div>
-                                        <CardTitle className="text-xl group-hover:text-primary transition-colors">
-                                            {post.title}
-                                        </CardTitle>
-                                    </CardHeader>
-                                    <CardContent>
-                                        <p className="text-muted-foreground text-sm line-clamp-3 mb-4">
-                                            {post.excerpt}
-                                        </p>
-                                        <div className="flex items-center text-primary text-sm font-medium group-hover:translate-x-1 transition-transform">
-                                            Read More <ArrowRight className="w-4 h-4 ml-1" />
-                                        </div>
-                                    </CardContent>
-                                </Card>
-                            </BlurFade>
-                        ))}
-                    </div>
+                                        <span className="text-xs text-muted-foreground flex items-center gap-1 shrink-0">
+                                            <Calendar className="w-3 h-3" />
+                                            {post.readTime}
+                                        </span>
+                                    </div>
+                                    <CardTitle className="text-lg leading-snug group-hover:text-primary transition-colors duration-200">
+                                        {post.title}
+                                    </CardTitle>
+                                </CardHeader>
+
+                                <CardContent className="pt-0">
+                                    <p className="text-muted-foreground text-sm leading-relaxed line-clamp-2 mb-4">
+                                        {post.excerpt}
+                                    </p>
+                                    <div className="flex items-center text-primary text-sm font-medium">
+                                        <span>Read More</span>
+                                        <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform duration-200" />
+                                    </div>
+                                </CardContent>
+                            </Card>
+                        </BlurFade>
+                    ))}
                 </div>
             </div>
 
             {/* Blog Reader Modal */}
             {selectedPost && (
-                <div className="fixed inset-0 z-50 bg-background/95 backdrop-blur-sm overflow-y-auto">
-                    <div className="container py-8">
-                        {/* Breadcrumb */}
-                        <div className="flex items-center justify-between mb-6">
-                            <Breadcrumb>
-                                <BreadcrumbList>
-                                    <BreadcrumbItem>
-                                        <BreadcrumbLink onClick={closePost} className="cursor-pointer">
-                                            Home
-                                        </BreadcrumbLink>
-                                    </BreadcrumbItem>
-                                    <BreadcrumbSeparator />
-                                    <BreadcrumbItem>
-                                        <BreadcrumbLink onClick={closePost} className="cursor-pointer">
-                                            Blog
-                                        </BreadcrumbLink>
-                                    </BreadcrumbItem>
-                                    <BreadcrumbSeparator />
-                                    <BreadcrumbItem>
-                                        <BreadcrumbPage className="max-w-[200px] truncate">
-                                            {selectedPost.title}
-                                        </BreadcrumbPage>
-                                    </BreadcrumbItem>
-                                </BreadcrumbList>
-                            </Breadcrumb>
-                            <Button variant="ghost" size="icon" onClick={closePost}>
+                <div className="fixed inset-0 z-50 bg-background">
+                    {/* Modal Header - Fixed */}
+                    <div className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
+                        <div className="max-w-3xl mx-auto px-6 py-4 flex items-center justify-between">
+                            <Button
+                                variant="ghost"
+                                size="sm"
+                                onClick={closePost}
+                                className="gap-2 text-muted-foreground hover:text-foreground -ml-2"
+                            >
+                                <ChevronLeft className="w-4 h-4" />
+                                Back to Blog
+                            </Button>
+                            <Button variant="ghost" size="icon" onClick={closePost} className="-mr-2">
                                 <X className="w-5 h-5" />
                             </Button>
                         </div>
+                    </div>
 
-                        {/* Post Header */}
-                        <div className="mb-8">
-                            <div className="flex items-center gap-2 mb-3">
-                                {selectedPost.tags.map((tag) => (
-                                    <Badge key={tag} variant="secondary">
-                                        {tag}
-                                    </Badge>
-                                ))}
-                                <span className="text-sm text-muted-foreground">
-                                    {selectedPost.readTime}
-                                </span>
-                            </div>
-                            <h1 className="text-3xl font-bold mb-4">{selectedPost.title}</h1>
-                        </div>
+                    {/* Scrollable Content */}
+                    <div className="h-full overflow-y-auto pt-16">
+                        <article className="max-w-3xl mx-auto px-6 py-8">
+                            {/* Post Header */}
+                            <header className="mb-8">
+                                <div className="flex items-center gap-2 mb-4 flex-wrap">
+                                    {selectedPost.tags.map((tag) => (
+                                        <Badge
+                                            key={tag}
+                                            variant="secondary"
+                                            className={`text-xs border ${getTagColor(tag)}`}
+                                        >
+                                            {tag}
+                                        </Badge>
+                                    ))}
+                                    <span className="text-sm text-muted-foreground flex items-center gap-1">
+                                        <Calendar className="w-3.5 h-3.5" />
+                                        {selectedPost.readTime}
+                                    </span>
+                                </div>
+                                <h1 className="text-3xl md:text-4xl font-bold leading-tight">
+                                    {selectedPost.title}
+                                </h1>
+                            </header>
 
-                        {/* Markdown Content */}
-                        {loading ? (
-                            <p className="text-muted-foreground">Loading...</p>
-                        ) : (
-                            <article className="prose prose-neutral dark:prose-invert max-w-none">
-                                <ReactMarkdown
-                                    components={{
-                                        h1: ({ children }) => <h1 className="text-2xl font-bold mt-8 mb-4">{children}</h1>,
-                                        h2: ({ children }) => <h2 className="text-xl font-semibold mt-6 mb-3 text-primary">{children}</h2>,
-                                        h3: ({ children }) => <h3 className="text-lg font-medium mt-4 mb-2">{children}</h3>,
-                                        p: ({ children }) => <p className="mb-4 leading-relaxed text-muted-foreground">{children}</p>,
-                                        ul: ({ children }) => <ul className="list-disc pl-6 mb-4 space-y-1 text-muted-foreground">{children}</ul>,
-                                        ol: ({ children }) => <ol className="list-decimal pl-6 mb-4 space-y-1 text-muted-foreground">{children}</ol>,
-                                        li: ({ children }) => <li>{children}</li>,
-                                        a: ({ href, children }) => <a href={href} className="text-primary hover:underline" target="_blank" rel="noopener noreferrer">{children}</a>,
-                                        strong: ({ children }) => <strong className="font-semibold text-foreground">{children}</strong>,
-                                        code: ({ children }) => <code className="bg-muted px-1.5 py-0.5 rounded text-sm">{children}</code>,
-                                        blockquote: ({ children }) => <blockquote className="border-l-4 border-primary pl-4 italic my-4">{children}</blockquote>,
-                                    }}
-                                >
-                                    {markdown}
-                                </ReactMarkdown>
-                            </article>
-                        )}
+                            {/* Markdown Content */}
+                            {loading ? (
+                                <div className="flex items-center justify-center py-20">
+                                    <div className="w-8 h-8 border-2 border-primary border-t-transparent rounded-full animate-spin" />
+                                </div>
+                            ) : (
+                                <div className="prose-container">
+                                    <ReactMarkdown
+                                        components={{
+                                            h1: ({ children }) => (
+                                                <h2 className="text-2xl font-bold mt-12 mb-4 text-foreground">
+                                                    {children}
+                                                </h2>
+                                            ),
+                                            h2: ({ children }) => (
+                                                <h2 className="text-xl font-semibold mt-10 mb-4 text-foreground">
+                                                    {children}
+                                                </h2>
+                                            ),
+                                            h3: ({ children }) => (
+                                                <h3 className="text-lg font-medium mt-8 mb-3 text-foreground">
+                                                    {children}
+                                                </h3>
+                                            ),
+                                            p: ({ children }) => (
+                                                <p className="text-base leading-7 text-muted-foreground mb-6">
+                                                    {children}
+                                                </p>
+                                            ),
+                                            ul: ({ children }) => (
+                                                <ul className="list-disc pl-6 mb-6 space-y-3 text-muted-foreground">
+                                                    {children}
+                                                </ul>
+                                            ),
+                                            ol: ({ children }) => (
+                                                <ol className="list-decimal pl-6 mb-6 space-y-3 text-muted-foreground">
+                                                    {children}
+                                                </ol>
+                                            ),
+                                            li: ({ children }) => (
+                                                <li className="text-base leading-7 pl-1">
+                                                    {children}
+                                                </li>
+                                            ),
+                                            a: ({ href, children }) => (
+                                                <a
+                                                    href={href}
+                                                    className="text-primary hover:underline underline-offset-4"
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                >
+                                                    {children}
+                                                </a>
+                                            ),
+                                            strong: ({ children }) => (
+                                                <strong className="font-semibold text-foreground">
+                                                    {children}
+                                                </strong>
+                                            ),
+                                            code: ({ children }) => (
+                                                <code className="bg-muted px-1.5 py-0.5 rounded text-sm font-mono">
+                                                    {children}
+                                                </code>
+                                            ),
+                                            pre: ({ children }) => (
+                                                <pre className="bg-muted/50 border border-border rounded-lg p-4 overflow-x-auto mb-6 text-sm">
+                                                    {children}
+                                                </pre>
+                                            ),
+                                            blockquote: ({ children }) => (
+                                                <blockquote className="border-l-4 border-primary/40 pl-6 my-6 text-muted-foreground italic">
+                                                    {children}
+                                                </blockquote>
+                                            ),
+                                        }}
+                                    >
+                                        {markdown}
+                                    </ReactMarkdown>
+                                </div>
+                            )}
 
-
+                            {/* Footer spacer */}
+                            <div className="h-24" />
+                        </article>
                     </div>
                 </div>
             )}
