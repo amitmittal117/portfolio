@@ -1,5 +1,5 @@
 import type { UnifiedTimelineItem } from '../types';
-import { timeline, projects, education } from '../data';
+import { timeline, projects } from '../data';
 
 export function getUnifiedTimeline(): UnifiedTimelineItem[] {
     const unified: UnifiedTimelineItem[] = [];
@@ -11,6 +11,7 @@ export function getUnifiedTimeline(): UnifiedTimelineItem[] {
             date: item.date,
             title: item.title,
             subtitle: item.company,
+            logo: item.logo,
             description: item.description,
             skills: item.skills
         });
@@ -18,29 +19,18 @@ export function getUnifiedTimeline(): UnifiedTimelineItem[] {
 
     // Add Projects
     projects.forEach(item => {
-        // Infer date if possible, or put "Project"
         unified.push({
             type: 'project',
-            date: 'Project', // You might want to parse "2024" or similar if available
+            date: item.date,
             title: item.title,
-            subtitle: item.tech,
+            subtitle: item.tech || item.skills.slice(0, 2).join(' · '),
             description: item.description,
             skills: item.skills,
             link: item.link
         });
     });
 
-    // Add Education
-    education.forEach(item => {
-        unified.push({
-            type: 'education',
-            date: item.date,
-            title: item.degree,
-            subtitle: item.school,
-            description: item.description,
-            skills: item.skills
-        });
-    });
+    // Education is now displayed separately in the Education section
 
     // Sort by date roughly?
     // Dates are strings like "Jan 2024 - Present", "2023 - 2025".

@@ -1,40 +1,161 @@
 {
   "projects": [
     {
-      "title": "Multi-Layered Agentic AI Systems for Autonomous Work Orchestration",
-      "tech": "OpenAI + FastAPI",
+      "date": "Jan 2026",
+      "title": "Hierarchical Agentic AI System",
       "description": [
-        "Achieved ~60% reduction in project planning time and ~40% improvement in execution consistency through a hierarchical agentic architecture orchestrating 3+ LLMs."
+        "Built multi-agent AI platform for autonomous work orchestration with GPT-4o, Gemini Pro, and Perplexity Sonar",
+        "Decomposes complex projects into granular tasks using intelligent classification",
+        "Executes tasks via specialized AI agents with cumulative context and multi-model collaboration"
       ],
-      "skills": ["Agentic AI", "OpenAI", "FastAPI", "LLMs"],
-      "link": "#"
+      "skills": ["OpenAI GPT-4o", "Gemini Pro", "Agentic AI", "Python"],
+      "link": "https://www.linkedin.com/posts/amitrmittal_ai-machinelearning-agenticai-activity-7414928188864376832-6uyc"
     },
     {
-      "title": "URL Shortener using Model Context Protocol (MCP)",
-      "tech": "Python + Kubernetes",
+      "date": "Jan 2026",
+      "title": "JSON ↔ TOON Converter",
       "description": [
-        "Designed the system with scalable FastMCP tools and clean HTTP routing deployed on Kubernetes on MicroK8s."
+        "Full-stack app for JSON to TOON conversion reducing payload size by 40-50%",
+        "REST APIs for programmatic integration into existing JSON pipelines",
+        "Built with React 19, Vite, Tailwind, FastAPI, and python-toon"
       ],
-      "skills": ["MCP", "Python", "Kubernetes", "MicroK8s", "FastMCP"],
-      "link": "#"
+      "skills": ["React", "FastAPI", "Python", "Tailwind"],
+      "link": "https://www.linkedin.com/posts/amitrmittal_react-fastapi-python-activity-7396732630844616704-KboB"
     },
     {
-      "title": "Agentic AI Workflow Automation",
-      "tech": "OpenHands + Kubernetes",
+      "date": "Dec 2025",
+      "title": "LeetCode Animation Generator",
       "description": [
-        "Orchestrated an agentic AI workflow integrating OpenHands with Llama 3.2 and Kubernetes for automated task execution."
+        "AI-powered system that transforms LeetCode solutions into educational animations",
+        "Analyzes Python code using AST parsing to detect data structures and algorithm patterns",
+        "Generates custom Manim visualizations with 10-27 animation sequences per problem"
       ],
-      "skills": ["OpenHands", "Llama 3.2", "Kubernetes", "Agentic AI"],
-      "link": "#"
+      "skills": ["Python", "Manim", "AST", "AI"],
+      "link": "https://www.linkedin.com/posts/amitrmittal_python-machinelearning-algorithm-activity-7364349928938094594-0tTF"
     },
     {
-      "title": "JSON to TOON Converter",
-      "tech": "Full-Stack Data Optimization",
+      "date": "Dec 2025",
+      "title": "Job Application Tracker",
       "description": [
-        "Built a full-stack JSON to TOON conversion platform achieving ~40% payload size reduction, exposing REST APIs and a web UI."
+        "Automated workflow tracking Workday job applications using GitHub Actions + Python",
+        "Fetches updated statuses, parses responses, and commits to GitHub every 30 minutes",
+        "Supports unlimited companies with centralized tracking"
       ],
-      "skills": ["Full-Stack", "REST API", "Data Optimization", "Web UI"],
-      "link": "#"
+      "skills": ["Python", "GitHub Actions", "Automation"],
+      "link": "https://www.linkedin.com/posts/amitrmittal_automating-my-job-application-tracking-activity-7395614481390878720-M3cP"
+    },
+    {
+      "date": "May 2025",
+      "title": "Lightweight URL Shortener",
+      "description": [
+        "Designed the system with scalable MCP tools and clean HTTP routing",
+        "Engineered an AI-agent-friendly microservice with FastAPI and FastMCP",
+        "Planned extensions include PostgreSQL, Docker, and Kubernetes deployment on MicroK8s"
+      ],
+      "skills": ["MCP", "Python", "FastAPI"],
+      "link": "https://www.linkedin.com/posts/amitrmittal_mcp-modelcontextprotocol-python-activity-7324691952321355777-avO-"
+    },
+    {
+      "date": "Feb 2025",
+      "title": "Automating AI Workflows",
+      "description": [
+        "Deployed and managed workloads on Kubernetes (MicroK8s) with Helm",
+        "Orchestrated an agentic AI system integrating OpenHands with Llama 3.2 (via Ollama)",
+        "Enabled autonomous query execution, validation, and adaptive decision-making"
+      ],
+      "skills": ["Ollama", "Kubernetes", "OpenHands", "Helm"],
+      "link": "https://www.linkedin.com/posts/amitrmittal_agenticai-ai-machinelearning-activity-7299932510593957889-QHck"
+    },
+    {
+      "date": "Jan 2025",
+      "title": "AI-Powered Chatbot",
+      "description": [
+        "Developed self-hosted chatbot running local AI models (DeepSeek-r1, Llama 3 via Ollama)",
+        "Built web UI and API integration ensuring privacy, reduced latency, and full customization"
+      ],
+      "skills": ["Llama 3", "AI", "Kubernetes", "Docker", "Ollama"],
+      "link": "https://www.linkedin.com/posts/amitrmittal_ai-machinelearning-kubernetes-activity-7291253668887044096-7y38"
+    },
+    {
+      "date": "Oct 2018",
+      "title": "Discord Bot",
+      "description": [
+        "Bot uses discord library to communicate with and monitor servers",
+        "Can read and replay messages according to previous comments",
+        "Shows stats of total members with online, offline and idle counts"
+      ],
+      "skills": ["Python", "Discord API"],
+      "link": "https://github.com/amitmittal117/discord-bot"
+    },
+    {
+      "date": "May 2018 - Sep 2018",
+      "title": "Real-time Object Recognition",
+      "description": [
+        "Real-time image detection using TensorFlow and Google's object detection library",
+        "Built with Python and Keras deep learning library for fast prototyping",
+        "Uses OpenCV2 to process camera feed frames and match against pre-trained models"
+      ],
+      "skills": ["TensorFlow", "Python", "Keras", "OpenCV"]
+    },
+    {
+      "date": "Apr 2018 - Jun 2018",
+      "title": "Search Engine Using Flask",
+      "description": [
+        "TV series search engine built on Flask with Jinja templates",
+        "Automatic internet exploration to find best matches for searched TV shows",
+        "MySQL caching for faster subsequent searches with integrated video player"
+      ],
+      "skills": ["Python", "Flask", "MySQL", "jQuery"]
+    },
+    {
+      "date": "Jan 2018 - Feb 2018",
+      "title": "Currency Exchanger",
+      "description": [
+        "Android app for real-time currency conversion",
+        "Uses real-time JSON data for accurate exchange rates",
+        "AsyncTask for on-demand currency fetching"
+      ],
+      "skills": ["Android", "Java", "REST API"]
+    },
+    {
+      "date": "Oct 2017 - Dec 2017",
+      "title": "Portfolio Website (jQuery)",
+      "description": [
+        "Custom JavaScript transitions and animations for learning frontend",
+        "Built with FontAwesome, MaterializeCSS and jQuery"
+      ],
+      "skills": ["JavaScript", "jQuery", "CSS"]
+    },
+    {
+      "date": "Jan 2017 - Apr 2017",
+      "title": "Medix - Healthcare Platform",
+      "description": [
+        "Web app for patients, doctors, and hospitals to track prescriptions",
+        "Aadhaar-based identity system as primary key",
+        "SMTP for notifications and SMS reminders for appointments",
+        "MySQL database on Amazon AWS"
+      ],
+      "skills": ["PHP", "MySQL", "AWS", "jQuery"]
+    },
+    {
+      "date": "Aug 2016 - Nov 2016",
+      "title": "BoxSearch - TV Series Search Engine",
+      "description": [
+        "Search engine for finding TV series across the internet",
+        "MySQL caching and integrated video player",
+        "Achieved 95% rating on Google's website analyzer"
+      ],
+      "skills": ["PHP", "MySQL", "JavaScript"]
+    },
+    {
+      "date": "Jan 2016 - May 2016",
+      "title": "BlueBox - Intranet Chat",
+      "description": [
+        "Android intranet chat app for same-network communication",
+        "Secure on-campus messaging with no external access",
+        "MySQL backend with PHP scripts, SMTP for password recovery"
+      ],
+      "skills": ["Android", "PHP", "MySQL"]
     }
   ]
 }

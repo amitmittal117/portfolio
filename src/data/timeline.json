@@ -3,44 +3,134 @@
     {
       "date": "May 2025 - Aug 2025",
       "title": "Software Development Intern",
-      "company": "E.S.R.I. Inc.",
+      "company": "Esri",
+      "logo": "/portfolio/img/experience/esri.jpg",
       "description": [
-        "Automated end-to-end deployment pipeline for ArcGIS Enterprise on Jenkins, saving 10 hours",
-        "Designed an issue management system to track and optimize workflow, increasing efficiency by 50%"
+        "Automated the end-to-end deployment pipeline for ArcGIS Enterprise on Jenkins, saving 10 hours of manual work",
+        "Developed an issue management system to enhance workflow tracking, boosting user efficiency by 50%",
+        "Collaborated with cross-functional teams to ensure seamless integration and deployment processes"
       ],
-      "skills": ["Jenkins", "ArcGIS Enterprise", "Windows Server"]
+      "skills": ["GIS", "Python", "PowerShell", "Jenkins"]
     },
     {
-      "date": "Sep 2022 - Jan 2024",
-      "title": "Staff Engineer",
-      "company": "IBM LABS",
-      "description": [
-        "Implemented IBM's Secret Manager on IaaS with SOC2 encryption, eliminating HSMs and saving $3 Million",
-        "Integrated IBM IAM with OpenID Connect for automated user permission management, cutting ticket turnaround by 90%",
-        "Integrated change data capture enabling metadata transfer, automating updates to SSOT and ServiceNow"
+      "date": "Apr 2024 - May 2025",
+      "title": "Teaching Associate & Research Assistant",
+      "company": "California State University, Fullerton",
+      "logo": "/portfolio/img/experience/csuf.jpg",
+      "roles": [
+        {
+          "title": "Teaching Associate",
+          "date": "Aug 2024 - May 2025",
+          "description": [
+            "Designed and delivered course material for Python programming, fostering student learning",
+            "Led engaging lab sessions and assignments, with automated grading saving 50% of time",
+            "Provided one-on-one assistance during and after class, improving satisfaction score by 50%"
+          ]
+        },
+        {
+          "title": "Research Assistant",
+          "date": "Apr 2024 - Jul 2024",
+          "description": [
+            "Conducted research on disaster management papers to assess aftermath and provide safety measures",
+            "Developed an application to guide users to the nearest safe zone in case of a disaster"
+          ]
+        }
       ],
-      "skills": ["Python", "AWS", "Docker", "Kubernetes", "LDAP"]
+      "description": [
+        "Designed and delivered course material for Python programming",
+        "Led engaging lab sessions with automated grading saving 50% of time",
+        "Conducted research on disaster management and developed safety zone application"
+      ],
+      "skills": ["Python", "Teaching", "Research", "Mobile Development"]
+    },
+    {
+      "date": "Aug 2022 - Jan 2024",
+      "title": "Staff Engineer",
+      "company": "IBM Cloud",
+      "logo": "/portfolio/img/experience/ibm-cloud.svg",
+      "description": [
+        "Integrated IBM IAM (Blue Groups) with LDAP for automated user permission management, cutting ticket turnaround by 90%",
+        "Implemented IBM's Secret Manager on PaaS with SOC2 compliant encryption, eliminating HSMs and saving $3M",
+        "Integrated Microservices with Debezium to enable real-time data transfer and auditing for data centers"
+      ],
+      "skills": ["Python", "Java", "Spring Boot", "Django", "Cloud IaaS"]
     },
     {
       "date": "Jun 2021 - Aug 2022",
       "title": "Full-Stack Developer",
       "company": "Axiom IO",
+      "logo": "/portfolio/img/experience/axiomio.jpg",
       "description": [
-        "Orchestrated deployment pipelines on Kubernetes, eliminating downtime to 0 seconds",
-        "Designed Sports and Game Aggregator Platforms managing ~14M weekly requests, reducing response time by 30%"
+        "Designed and architected Sports Aggregator Platform to provide seamless and reliable sports feed",
+        "Created CI/CD pipelines for dev, stage and prod for seamless deployment through Amazon CodePipeline",
+        "Developed APIs in GoLang for major game providers covering $2M+ game transactions",
+        "Built Game Aggregator Project serving ~14M requests weekly"
       ],
-      "skills": ["Kubernetes", "Go Fiber", "PostgreSQL", "Redis"]
+      "skills": ["Golang", "Java", "Microservices", "AWS"]
     },
     {
       "date": "Dec 2018 - Jun 2021",
-      "title": "Software Developer",
-      "company": "Kuliza Technologies",
-      "description": [
-        "Led Educational Loan project, designing key modules and managing a team of four, improving efficiency by 30%",
-        "Implemented LDAP-based authentication and Celery queues for asynchronous processing",
-        "Created eMandate module removing manual EMI collection, saving $500K"
+      "title": "Software Developer → Senior Developer",
+      "company": "Kuliza Technologies (Finvolv)",
+      "logo": "/portfolio/img/experience/kuliza.jpg",
+      "roles": [
+        {
+          "title": "Senior Software Developer",
+          "date": "Aug 2020 - Jun 2021",
+          "project": "FedFina - Federal Bank Lending",
+          "description": [
+            "Built the project from scratch as senior developer",
+            "Designed and developed the master containing information of PAN India banks",
+            "Used LDAP to manage user authentication successfully"
+          ]
+        },
+        {
+          "title": "Software Developer",
+          "date": "Feb 2020 - Aug 2020",
+          "project": "Magma FinCorp",
+          "description": [
+            "Created a retrigger system for all APIs automatically in case of server failure",
+            "Designed an Audit System for Accounts team to track money and review profit/loss daily"
+          ]
+        },
+        {
+          "title": "Software Developer",
+          "date": "Dec 2018 - Feb 2020",
+          "project": "Aditya Birla Finance Ltd",
+          "description": [
+            "Technical Lead for Educational Loan project - built architecture and major modules",
+            "Created eMandate module to automate the EMI system",
+            "SQL optimization decreasing execution time from 1 min to 7 sec"
+          ]
+        }
       ],
-      "skills": ["Django", "Celery", "PostgreSQL", "LDAP"]
+      "description": [
+        "Technical Lead for Educational Loan project - built architecture and major modules for Aditya Birla Finance",
+        "Created eMandate module to automate EMI system, saving $500K in manual processing",
+        "Built FedFina Federal Bank Lending project from scratch as senior developer",
+        "SQL optimization decreasing execution time from 1 min to 7 sec"
+      ],
+      "skills": ["Python", "Java", "Django", "Celery", "Spring Boot", "LDAP"]
+    },
+    {
+      "date": "Sep 2017 - Dec 2018",
+      "title": "Software Developer",
+      "company": "Digital Marketing Systems Pvt. Ltd.",
+      "logo": "/portfolio/img/experience/dmsl.jpg",
+      "description": [
+        "Developed ERP web applications on Odoo platform using Python for clients like Grasim"
+      ],
+      "skills": ["Python", "Odoo", "ERP"]
+    },
+    {
+      "date": "Jun 2014 - Jul 2014",
+      "title": "Academic Trainee",
+      "company": "Techoz Ltd",
+      "logo": "/portfolio/img/experience/techoz.jpg",
+      "description": [
+        "Completed academic training program in software development"
+      ],
+      "skills": ["Training"]
     }
   ]
 }

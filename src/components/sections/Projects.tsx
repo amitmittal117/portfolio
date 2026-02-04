@@ -42,7 +42,7 @@ export function Projects() {
                                                 {project.title}
                                             </h3>
                                             <p className="text-xs text-muted-foreground font-medium">
-                                                {project.tech}
+                                                {project.date}{project.tech && ` · ${project.tech}`}
                                             </p>
                                         </div>
                                         <ArrowUpRight className="h-4 w-4 text-muted-foreground opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-200" aria-hidden />

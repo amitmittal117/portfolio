@@ -7,14 +7,14 @@ import blogData from './blog.json';
 import projectsData from './projects.json';
 import educationData from './education.json';
 
-import type { Profile, SkillsData, SkillCategory, TimelineItem, Certificate, BlogPost, Education } from '../types';
+import type { Profile, SkillsData, SkillCategory, TimelineItem, Certificate, BlogPost, Education, Project } from '../types';
 
 export const profile: Profile = profileData;
 export const skillsCategories: SkillCategory[] = (skillsData as SkillsData).categories;
 export const timeline: TimelineItem[] = timelineData.timeline;
 export const certificates: Certificate[] = certificatesData.certificates;
 export const blogPosts: BlogPost[] = blogData.blogPosts;
-export const projects = projectsData.projects;
+export const projects: Project[] = projectsData.projects as Project[];
 export const education: Education[] = educationData.education;
 
 // Combined portfolio data object for convenience

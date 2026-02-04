@@ -49,9 +49,17 @@ export function Education() {
                             <Card className="h-full group relative overflow-hidden border-muted/60 hover:border-primary/40 transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5">
                                 <CardHeader className="pb-3">
                                     <div className="flex items-start gap-3">
-                                        {/* Icon */}
-                                        <div className="shrink-0 w-12 h-12 rounded-xl bg-gradient-to-br from-primary/10 to-purple-500/10 border border-primary/20 flex items-center justify-center group-hover:from-primary/20 group-hover:to-purple-500/20 transition-all duration-300">
-                                            <GraduationCap className="w-6 h-6 text-primary" />
+                                        {/* Logo or fallback icon */}
+                                        <div className="shrink-0 w-12 h-12 rounded-xl bg-white border border-border flex items-center justify-center overflow-hidden p-1.5">
+                                            {edu.logo ? (
+                                                <img
+                                                    src={edu.logo}
+                                                    alt={edu.school}
+                                                    className="w-full h-full object-cover"
+                                                />
+                                            ) : (
+                                                <GraduationCap className="w-6 h-6 text-primary" />
+                                            )}
                                         </div>
 
                                         {/* Header content */}

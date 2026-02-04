@@ -18,7 +18,7 @@ export function Timeline() {
     return (
         <section id="experience" className="section border-t">
             <div className="container">
-                <h2 className="section-title text-center sm:text-left">My Journey</h2>
+                <h2 className="section-title text-center sm:text-left">My Experience</h2>
 
                 {/* Clean card-based grid layout */}
                 <div className="grid gap-4 sm:gap-6">
@@ -28,8 +28,18 @@ export function Timeline() {
                                 {/* Header row */}
                                 <div className="flex items-start justify-between gap-3 mb-3">
                                     <div className="flex items-center gap-2">
-                                        <div className="bg-primary/10 text-primary rounded-lg p-2 shrink-0">
-                                            {getIcon(item.type)}
+                                        <div className="shrink-0 w-12 h-12 rounded-xl bg-white border border-border flex items-center justify-center overflow-hidden p-1.5">
+                                            {item.logo ? (
+                                                <img
+                                                    src={item.logo}
+                                                    alt={item.subtitle}
+                                                    className="w-full h-full object-cover"
+                                                />
+                                            ) : (
+                                                <div className="bg-primary/10 text-primary w-full h-full flex items-center justify-center rounded-lg">
+                                                    {getIcon(item.type)}
+                                                </div>
+                                            )}
                                         </div>
                                         <div>
                                             <h3 className="text-sm sm:text-base font-semibold text-foreground leading-tight">
@@ -45,11 +55,16 @@ export function Timeline() {
                                     </span>
                                 </div>
 
-                                {/* Description - just first point on mobile */}
+                                {/* Description - show all points */}
                                 {item.description.length > 0 && (
-                                    <p className="text-xs sm:text-sm text-muted-foreground line-clamp-2 mb-3">
-                                        {item.description[0]}
-                                    </p>
+                                    <ul className="text-xs sm:text-sm text-muted-foreground space-y-1 mb-3">
+                                        {item.description.map((desc, i) => (
+                                            <li key={i} className="flex items-start gap-2">
+                                                <span className="text-primary mt-1 text-[10px]">●</span>
+                                                <span>{desc}</span>
+                                            </li>
+                                        ))}
+                                    </ul>
                                 )}
 
                                 {/* Skills & Link */}

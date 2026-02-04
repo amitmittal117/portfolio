@@ -4,6 +4,7 @@
       "degree": "Master of Science in Computer Science",
       "school": "California State University, Fullerton",
       "date": "2024 - 2025",
+      "logo": "/portfolio/img/education/csuf.png",
       "description": [
         "Focusing on Artificial Intelligence and Machine Learning.",
         "GPA: 3.8/4.0"
@@ -14,6 +15,7 @@
       "degree": "Bachelor of Technology in Computer Science",
       "school": "Rajiv Gandhi Proudyogiki Vishwavidyalaya",
       "date": "2013 - 2017",
+      "logo": "/portfolio/img/education/rgpv.svg",
       "description": [
         "Graduated with Honors."
       ],

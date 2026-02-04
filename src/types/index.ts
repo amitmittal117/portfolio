@@ -47,6 +47,7 @@ export interface TimelineItem {
     date: string;
     title: string;
     company: string;
+    logo?: string;
     description: string[];
     skills: string[];
 }
@@ -64,16 +65,18 @@ export interface BlogPost {
 
 export interface Project {
     title: string;
-    tech: string;
+    date: string;
+    tech?: string;
     description: string[];
     skills: string[];
-    link: string;
+    link?: string;
 }
 
 export interface Education {
     degree: string;
     school: string;
     date: string;
+    logo?: string;
     description: string[];
     skills: string[];
 }
@@ -83,6 +86,7 @@ export interface UnifiedTimelineItem {
     date: string;
     title: string;
     subtitle: string;
+    logo?: string;
     description: string[];
     skills: string[];
     link?: string;
