@@ -1,52 +1,34 @@
-import { getUnifiedTimeline } from '../../utils/timelineUtils';
+import { projects } from '../../data';
 import { Badge } from '@/components/ui/badge';
 import { BlurFade } from '@/components/ui/blur-fade';
-import { Briefcase, GraduationCap, Layers, ExternalLink } from 'lucide-react';
+import { Layers, ExternalLink } from 'lucide-react';
 
-export function Timeline() {
-    const timelineData = getUnifiedTimeline();
-
-    const getIcon = (type: string) => {
-        switch (type) {
-            case 'work': return <Briefcase className="w-4 h-4" />;
-            case 'project': return <Layers className="w-4 h-4" />;
-            case 'education': return <GraduationCap className="w-4 h-4" />;
-            default: return <Briefcase className="w-4 h-4" />;
-        }
-    };
-
+export function ProjectsTimeline() {
     return (
-        <section id="experience" className="section border-t">
+        <section id="projects" className="section border-t">
             <div className="container">
-                <h2 className="section-title text-center sm:text-left">My Experience</h2>
+                <h2 className="section-title text-center sm:text-left">Projects</h2>
 
-                {/* Clean card-based grid layout */}
+                {/* Clean card-based grid layout - matching Experience.tsx style */}
                 <div className="grid gap-4 sm:gap-6">
-                    {timelineData.map((item, index) => (
+                    {projects.map((item, index) => (
                         <BlurFade key={`${item.title}-${index}`} delay={0.1 + index * 0.05}>
                             <div className="p-4 sm:p-5 rounded-xl border bg-card hover:shadow-md transition-shadow">
                                 {/* Header row */}
                                 <div className="flex items-start justify-between gap-3 mb-3">
                                     <div className="flex items-center gap-2">
                                         <div className="shrink-0 w-12 h-12 rounded-xl bg-white border border-border flex items-center justify-center overflow-hidden p-1.5">
-                                            {item.logo ? (
-                                                <img
-                                                    src={item.logo}
-                                                    alt={item.subtitle}
-                                                    className="w-full h-full object-cover"
-                                                />
-                                            ) : (
-                                                <div className="bg-primary/10 text-primary w-full h-full flex items-center justify-center rounded-lg">
-                                                    {getIcon(item.type)}
-                                                </div>
-                                            )}
+                                            {/* Projects usually don't have logos in the data, using Icon */}
+                                            <div className="bg-primary/10 text-primary w-full h-full flex items-center justify-center rounded-lg">
+                                                <Layers className="w-4 h-4" />
+                                            </div>
                                         </div>
                                         <div>
                                             <h3 className="text-sm sm:text-base font-semibold text-foreground leading-tight">
                                                 {item.title}
                                             </h3>
                                             <p className="text-xs text-muted-foreground">
-                                                {item.subtitle}
+                                                {item.tech || (item.skills && item.skills.slice(0, 2).join(' · '))}
                                             </p>
                                         </div>
                                     </div>
@@ -80,7 +62,7 @@ export function Timeline() {
                                             View
                                         </a>
                                     )}
-                                    {item.skills.slice(0, 4).map((skill, i) => {
+                                    {item.skills && item.skills.slice(0, 4).map((skill, i) => {
                                         const colors = [
                                             "bg-purple-500/10 text-purple-500",
                                             "bg-green-500/10 text-green-500",
@@ -97,7 +79,7 @@ export function Timeline() {
                                             </Badge>
                                         )
                                     })}
-                                    {item.skills.length > 4 && (
+                                    {item.skills && item.skills.length > 4 && (
                                         <span className="text-[9px] text-muted-foreground">
                                             +{item.skills.length - 4}
                                         </span>
@@ -112,4 +94,4 @@ export function Timeline() {
     );
 }
 
-export default Timeline;
+export default ProjectsTimeline;

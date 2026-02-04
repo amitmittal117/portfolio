@@ -5,7 +5,8 @@ import ScrollToTop from './components/layout/ScrollToTop';
 import MobileDock from './components/layout/MobileDock';
 import Hero from './components/sections/Hero';
 import Skills from './components/sections/Skills';
-import Timeline from './components/sections/Timeline';
+import Experience from './components/sections/Experience';
+import ProjectsTimeline from './components/sections/ProjectsTimeline';
 import Certificates from './components/sections/Certificates';
 import Blog from './components/sections/Blog';
 import FAQ from './components/sections/FAQ';
@@ -19,7 +20,8 @@ function App() {
       <main className="flex-1">
         <Hero />
         <Skills />
-        <Timeline />
+        <Experience />
+        <ProjectsTimeline />
         <Education />
         <Certificates />
         <Blog />
