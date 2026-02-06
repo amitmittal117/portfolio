@@ -37,86 +37,84 @@ const getSkillColor = (skill: string) => {
     return 'bg-slate-500/10 text-slate-600 dark:text-slate-400 border-slate-500/20';
 };
 
+import { Section } from '@/components/common/Section';
+
 export function Education() {
     return (
-        <section id="education" className="section border-t">
-            <div className="container">
-                <h2 className="section-title text-center sm:text-left">Education</h2>
+        <Section id="education" title="Education">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+                {education.map((edu, index) => (
+                    <BlurFade key={edu.school} delay={0.1 + index * 0.05}>
+                        <Card className="h-full group relative overflow-hidden border-muted/60 hover:border-primary/40 transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5">
+                            <CardHeader className="pb-3">
+                                <div className="flex items-start gap-3">
+                                    {/* Logo or fallback icon */}
+                                    <div className="shrink-0 w-12 h-12 rounded-xl bg-white border border-border flex items-center justify-center overflow-hidden p-1.5">
+                                        {edu.logo ? (
+                                            <img
+                                                src={edu.logo}
+                                                alt={edu.school}
+                                                className="w-full h-full object-cover"
+                                            />
+                                        ) : (
+                                            <GraduationCap className="w-6 h-6 text-primary" />
+                                        )}
+                                    </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-                    {education.map((edu, index) => (
-                        <BlurFade key={edu.school} delay={0.1 + index * 0.05}>
-                            <Card className="h-full group relative overflow-hidden border-muted/60 hover:border-primary/40 transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5">
-                                <CardHeader className="pb-3">
-                                    <div className="flex items-start gap-3">
-                                        {/* Logo or fallback icon */}
-                                        <div className="shrink-0 w-12 h-12 rounded-xl bg-white border border-border flex items-center justify-center overflow-hidden p-1.5">
-                                            {edu.logo ? (
-                                                <img
-                                                    src={edu.logo}
-                                                    alt={edu.school}
-                                                    className="w-full h-full object-cover"
-                                                />
-                                            ) : (
-                                                <GraduationCap className="w-6 h-6 text-primary" />
-                                            )}
-                                        </div>
-
-                                        {/* Header content */}
-                                        <div className="flex-1 min-w-0">
-                                            <h3 className="font-semibold text-lg leading-tight text-foreground group-hover:text-primary transition-colors duration-200 mb-1">
-                                                {edu.school}
-                                            </h3>
-                                            <div className="flex items-center gap-2 text-xs text-muted-foreground">
-                                                <Calendar className="w-3 h-3" />
-                                                <span>{edu.date}</span>
-                                            </div>
+                                    {/* Header content */}
+                                    <div className="flex-1 min-w-0">
+                                        <h3 className="font-semibold text-lg leading-tight text-foreground group-hover:text-primary transition-colors duration-200 mb-1">
+                                            {edu.school}
+                                        </h3>
+                                        <div className="flex items-center gap-2 text-xs text-muted-foreground">
+                                            <Calendar className="w-3 h-3" />
+                                            <span>{edu.date}</span>
                                         </div>
                                     </div>
-                                </CardHeader>
+                                </div>
+                            </CardHeader>
 
-                                <CardContent className="pt-0">
-                                    {/* Degree badge */}
-                                    <Badge
-                                        variant="secondary"
-                                        className={`text-xs border mb-3 ${getDegreeColor(edu.degree)}`}
-                                    >
-                                        {edu.degree}
-                                    </Badge>
+                            <CardContent className="pt-0">
+                                {/* Degree badge */}
+                                <Badge
+                                    variant="secondary"
+                                    className={`text-xs border mb-3 ${getDegreeColor(edu.degree)}`}
+                                >
+                                    {edu.degree}
+                                </Badge>
 
-                                    {/* Description */}
-                                    {edu.description && edu.description.length > 0 && (
-                                        <ul className="text-sm text-muted-foreground space-y-1.5 mb-4">
-                                            {edu.description.map((desc, i) => (
-                                                <li key={i} className="flex items-start gap-2 leading-relaxed">
-                                                    <span className="text-primary mt-1.5 text-xs">●</span>
-                                                    {desc}
-                                                </li>
-                                            ))}
-                                        </ul>
-                                    )}
+                                {/* Description */}
+                                {edu.description && edu.description.length > 0 && (
+                                    <ul className="text-sm text-muted-foreground space-y-1.5 mb-4">
+                                        {edu.description.map((desc, i) => (
+                                            <li key={i} className="flex items-start gap-2 leading-relaxed">
+                                                <span className="text-primary mt-1.5 text-xs">●</span>
+                                                {desc}
+                                            </li>
+                                        ))}
+                                    </ul>
+                                )}
 
-                                    {/* Skills */}
-                                    {edu.skills && edu.skills.length > 0 && (
-                                        <div className="flex flex-wrap gap-1.5">
-                                            {edu.skills.map((skill) => (
-                                                <Badge
-                                                    key={skill}
-                                                    variant="outline"
-                                                    className={`text-[10px] border ${getSkillColor(skill)}`}
-                                                >
-                                                    {skill}
-                                                </Badge>
-                                            ))}
-                                        </div>
-                                    )}
-                                </CardContent>
-                            </Card>
-                        </BlurFade>
-                    ))}
-                </div>
+                                {/* Skills */}
+                                {edu.skills && edu.skills.length > 0 && (
+                                    <div className="flex flex-wrap gap-1.5">
+                                        {edu.skills.map((skill) => (
+                                            <Badge
+                                                key={skill}
+                                                variant="outline"
+                                                className={`text-[10px] border ${getSkillColor(skill)}`}
+                                            >
+                                                {skill}
+                                            </Badge>
+                                        ))}
+                                    </div>
+                                )}
+                            </CardContent>
+                        </Card>
+                    </BlurFade>
+                ))}
             </div>
-        </section>
+        </Section>
     );
 }
 

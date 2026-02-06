@@ -14,6 +14,10 @@ const navLinks = [
     { label: 'Contact', href: 'contact' },
 ];
 
+import { profile } from '@/data';
+
+// ... (existing imports)
+
 export function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -28,7 +32,7 @@ export function Header() {
                 <AvatarCircles
                     numPeople={0}
                     avatarUrls={[{
-                        imageUrl: "https://ui-avatars.com/api/?name=AM&background=333&color=fff&rounded=true&bold=true",
+                        imageUrl: profile.profileImage,
                         profileUrl: "#hero"
                     }]}
                     className="cursor-pointer"
