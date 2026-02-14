@@ -4,7 +4,7 @@
       "date": "May 2025 - Aug 2025",
       "title": "Software Development Intern",
       "company": "Esri",
-      "logo": "/portfolio/img/experience/esri.jpg",
+      "logo": "/img/experience/esri.jpg",
       "description": [
         "Automated the end-to-end deployment pipeline for ArcGIS Enterprise on Jenkins, saving 10 hours of manual work",
         "Developed an issue management system to enhance workflow tracking, boosting user efficiency by 50%",
@@ -16,7 +16,7 @@
       "date": "Apr 2024 - May 2025",
       "title": "Teaching Associate & Research Assistant",
       "company": "California State University, Fullerton",
-      "logo": "/portfolio/img/experience/csuf.jpg",
+      "logo": "/img/experience/csuf.jpg",
       "roles": [
         {
           "title": "Teaching Associate",
@@ -47,7 +47,7 @@
       "date": "Aug 2022 - Jan 2024",
       "title": "Staff Engineer",
       "company": "IBM Cloud",
-      "logo": "/portfolio/img/experience/ibm-cloud.svg",
+      "logo": "/img/experience/ibm-cloud.svg",
       "description": [
         "Integrated IBM IAM (Blue Groups) with LDAP for automated user permission management, cutting ticket turnaround by 90%",
         "Implemented IBM's Secret Manager on PaaS with SOC2 compliant encryption, eliminating HSMs and saving $3M",
@@ -59,7 +59,7 @@
       "date": "Jun 2021 - Aug 2022",
       "title": "Full-Stack Developer",
       "company": "Axiom IO",
-      "logo": "/portfolio/img/experience/axiomio.jpg",
+      "logo": "/img/experience/axiomio.jpg",
       "description": [
         "Designed and architected Sports Aggregator Platform to provide seamless and reliable sports feed",
         "Created CI/CD pipelines for dev, stage and prod for seamless deployment through Amazon CodePipeline",
@@ -72,7 +72,7 @@
       "date": "Dec 2018 - Jun 2021",
       "title": "Software Developer → Senior Developer",
       "company": "Kuliza Technologies (Finvolv)",
-      "logo": "/portfolio/img/experience/kuliza.jpg",
+      "logo": "/img/experience/kuliza.jpg",
       "roles": [
         {
           "title": "Senior Software Developer",
@@ -116,7 +116,7 @@
       "date": "Sep 2017 - Dec 2018",
       "title": "Software Developer",
       "company": "Digital Marketing Systems Pvt. Ltd.",
-      "logo": "/portfolio/img/experience/dmsl.jpg",
+      "logo": "/img/experience/dmsl.jpg",
       "description": [
         "Developed ERP web applications on Odoo platform using Python for clients like Grasim"
       ],
@@ -126,7 +126,7 @@
       "date": "Jun 2014 - Jul 2014",
       "title": "Academic Trainee",
       "company": "Techoz Ltd",
-      "logo": "/portfolio/img/experience/techoz.jpg",
+      "logo": "/img/experience/techoz.jpg",
       "description": [
         "Completed academic training program in software development"
       ],
