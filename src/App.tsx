@@ -1,4 +1,5 @@
 import './index.css';
+import { useAnalytics } from './hooks/useAnalytics';
 import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
 import ScrollToTop from './components/layout/ScrollToTop';
@@ -14,6 +15,7 @@ import Education from './components/sections/Education';
 import Contact from './components/sections/Contact';
 
 function App() {
+  useAnalytics();
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
