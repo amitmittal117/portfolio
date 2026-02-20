@@ -1,6 +1,13 @@
 import { useEffect } from 'react';
 import { supabase } from '../lib/supabase';
 
+// Common bots/crawlers — skip tracking these entirely
+const BOT_PATTERN = /bot|crawler|spider|crawling|google|bing|yahoo|baidu|yandex|duckduck|slurp|facebookexternalhit|twitterbot|linkedinbot|whatsapp|telegram|slack|discord|curl|wget|python|java|go-http|axios|lighthouse|pagespeed/i;
+
+function isBot(ua: string): boolean {
+    return BOT_PATTERN.test(ua);
+}
+
 function getDeviceType(): string {
     const ua = navigator.userAgent;
     if (/Mobi|Android|iPhone|iPad|iPod/i.test(ua)) {
@@ -12,6 +19,11 @@ function getDeviceType(): string {
 
 export function useAnalytics() {
     useEffect(() => {
+        const ua = navigator.userAgent;
+
+        // Skip bots and crawlers — they inflate counts and return null geo data
+        if (isBot(ua)) return;
+
         // Only track once per browser session (avoids double-counting refreshes)
         const SESSION_KEY = 'portfolio_tracked';
         if (sessionStorage.getItem(SESSION_KEY)) return;
@@ -34,7 +46,7 @@ export function useAnalytics() {
                     latitude: geo.latitude ?? null,
                     longitude: geo.longitude ?? null,
                     referrer: document.referrer || null,
-                    user_agent: navigator.userAgent,
+                    user_agent: ua,
                     path: window.location.pathname,
                     device: getDeviceType(),
                 });
