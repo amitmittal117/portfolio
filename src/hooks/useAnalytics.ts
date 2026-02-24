@@ -55,10 +55,13 @@ export function useAnalytics(consent: ConsentValue) {
                     .then(r => r.json())
                     .catch(() => ({}));
 
-                const { data } = await supabase
+                // Generate session_id client-side — avoids needing SELECT permission
+                // under RLS (plain INSERT only requires INSERT privilege)
+                const sid = crypto.randomUUID();
+
+                const { error } = await supabase
                     .from('page_views')
                     .insert({
-                        // Existing fields
                         ip: geo.ip ?? null,
                         country: geo.country_name ?? null,
                         country_code: geo.country_code ?? null,
@@ -71,7 +74,7 @@ export function useAnalytics(consent: ConsentValue) {
                         user_agent: ua,
                         path: window.location.pathname,
                         device: getDeviceType(),
-                        // New enriched fields
+                        session_id: sid,
                         screen_width: window.screen.width,
                         screen_height: window.screen.height,
                         viewport_width: window.innerWidth,
@@ -84,14 +87,12 @@ export function useAnalytics(consent: ConsentValue) {
                         utm_medium: params.get('utm_medium'),
                         utm_campaign: params.get('utm_campaign'),
                         session_start: new Date().toISOString(),
-                    })
-                    .select('session_id')
-                    .single();
+                    });
 
-                if (data?.session_id) {
-                    sessionIdRef.current = data.session_id;
-                    setSessionId(data.session_id);
-                    sessionStorage.setItem(SESSION_ID_KEY, data.session_id);
+                if (!error) {
+                    sessionIdRef.current = sid;
+                    setSessionId(sid);
+                    sessionStorage.setItem(SESSION_ID_KEY, sid);
                 }
             } catch { /* silently fail — never break the portfolio */ }
         });
