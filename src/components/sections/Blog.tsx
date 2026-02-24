@@ -79,6 +79,7 @@ export function Blog() {
                         <BlurFade key={post.id} delay={0.1 + index * 0.05}>
                             <Card
                                 className="h-full group relative overflow-hidden cursor-pointer border-muted/60 hover:border-primary/40 transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5"
+                                data-track="blog_post_click"
                                 onClick={() => openPost(post)}
                             >
                                 <CardHeader className="pb-3">

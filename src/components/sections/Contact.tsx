@@ -56,7 +56,7 @@ export function Contact() {
 
                         <div className="space-y-3 sm:space-y-4">
                             <Button asChild className="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white shadow-lg shadow-blue-500/20 transition-all hover:scale-105">
-                                <a href={`mailto:${profile.email}`}>
+                                <a href={`mailto:${profile.email}`} data-track="contact_email">
                                     <Mail className="w-4 h-4 mr-2" />
                                     <span className="truncate">{profile.email}</span>
                                 </a>
@@ -88,6 +88,7 @@ export function Contact() {
                                 <Button
                                     onClick={handleSendFeedback}
                                     disabled={!feedback.trim()}
+                                    data-track="contact_feedback_send"
                                     className="bg-primary text-primary-foreground hover:bg-primary/90 shadow-sm text-sm"
                                 >
                                     <Send className="w-4 h-4 mr-2" />

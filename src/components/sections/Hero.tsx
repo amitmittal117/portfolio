@@ -100,6 +100,7 @@ export function Hero() {
                                                 <a
                                                     href={profile.resumeUrl}
                                                     download
+                                                    data-track="resume_download"
                                                     className={cn(
                                                         buttonVariants({ variant: "ghost", size: "icon" }),
                                                         "size-12 rounded-full"
@@ -127,6 +128,7 @@ export function Hero() {
                                                             href={social.url}
                                                             target="_blank"
                                                             rel="noopener noreferrer"
+                                                            data-track={`social_${social.name.toLowerCase()}`}
                                                             className={cn(
                                                                 buttonVariants({ variant: "ghost", size: "icon" }),
                                                                 "size-12 rounded-full"
@@ -149,6 +151,7 @@ export function Hero() {
                                             <TooltipTrigger asChild>
                                                 <a
                                                     href={`mailto:${profile.email}`}
+                                                    data-track="email_click"
                                                     className={cn(
                                                         buttonVariants({ variant: "ghost", size: "icon" }),
                                                         "size-12 rounded-full"
