@@ -22,9 +22,10 @@ const iconMap: Record<string, LucideIcon> = {
     instagram: Instagram,
 };
 
+
 export function Hero() {
     return (
-        <section id="hero" className="section min-h-screen flex items-center pt-14 relative overflow-hidden">
+        <section id="hero" className="section min-h-screen flex items-start pt-24 sm:pt-28 relative overflow-hidden">
             {/* Animated Grid Background */}
             <AnimatedGridPattern
                 numSquares={30}
@@ -91,7 +92,7 @@ export function Hero() {
                                     direction="middle"
                                     iconSize={50}
                                     iconDistance={100}
-                                    className="bg-background/80 border shadow-lg"
+                                    className="bg-background border shadow-lg"
                                 >
                                     {/* Resume Download */}
                                     <DockIcon>
@@ -106,7 +107,7 @@ export function Hero() {
                                                         "size-12 rounded-full"
                                                     )}
                                                 >
-                                                    <FileText className="size-6" />
+                                                    <FileText className="size-6 transition-colors duration-200" style={{ color: profile.resumeColor }} />
                                                 </a>
                                             </TooltipTrigger>
                                             <TooltipContent>
@@ -134,7 +135,7 @@ export function Hero() {
                                                                 "size-12 rounded-full"
                                                             )}
                                                         >
-                                                            <IconComponent className="size-6" />
+                                                            <IconComponent className="size-6 transition-colors duration-200" style={{ color: social.color }} />
                                                         </a>
                                                     </TooltipTrigger>
                                                     <TooltipContent>
@@ -157,7 +158,7 @@ export function Hero() {
                                                         "size-12 rounded-full"
                                                     )}
                                                 >
-                                                    <Mail className="size-6" />
+                                                    <Mail className="size-6 transition-colors duration-200" style={{ color: profile.emailColor }} />
                                                 </a>
                                             </TooltipTrigger>
                                             <TooltipContent>

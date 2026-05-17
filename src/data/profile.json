@@ -11,11 +11,13 @@
   "email": "amitarmittal@gmail.com",
   "location": "San Jose, CA",
   "social": [
-    { "name": "GitHub", "url": "https://github.com/amitmittal117", "icon": "github" },
-    { "name": "LinkedIn", "url": "https://www.linkedin.com/in/amitrmittal/", "icon": "linkedin" },
-    { "name": "LeetCode", "url": "https://leetcode.com/u/Amitmittal/", "icon": "leetcode" },
-    { "name": "Instagram", "url": "https://www.instagram.com/amitmittal2/", "icon": "instagram" }
+    { "name": "GitHub", "url": "https://github.com/amitmittal117", "icon": "github", "color": "#6e40c9" },
+    { "name": "LinkedIn", "url": "https://www.linkedin.com/in/amitrmittal/", "icon": "linkedin", "color": "#0A66C2" },
+    { "name": "LeetCode", "url": "https://leetcode.com/u/Amitmittal/", "icon": "leetcode", "color": "#FFA116" },
+    { "name": "Instagram", "url": "https://www.instagram.com/amitmittal2/", "icon": "instagram", "color": "#E4405F" }
   ],
+  "emailColor": "#EA4335",
+  "resumeColor": "#4285F4",
   "resumeUrl": "https://drive.google.com/uc?export=download&id=110sDnmwU9ra9-lQRtIVS-M9ALKlYC20-",
   "profileImage": "./img/Amit-Mittal-1.jpg"
 }

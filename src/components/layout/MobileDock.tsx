@@ -17,6 +17,7 @@ const iconMap: Record<string, LucideIcon> = {
     instagram: Instagram,
 };
 
+
 export function MobileDock() {
     return (
         <div className="fixed bottom-4 left-0 right-0 z-50 flex justify-center sm:hidden">
@@ -25,7 +26,7 @@ export function MobileDock() {
                     direction="middle"
                     iconSize={44}
                     iconDistance={80}
-                    className="bg-background/95 backdrop-blur-md border shadow-xl"
+                    className="bg-background border shadow-xl"
                 >
                     {/* Resume Download */}
                     <DockIcon>
@@ -39,7 +40,7 @@ export function MobileDock() {
                                         "size-10 rounded-full"
                                     )}
                                 >
-                                    <FileText className="size-5" />
+                                    <FileText className="size-5 transition-colors duration-200" style={{ color: profile.resumeColor }} />
                                 </a>
                             </TooltipTrigger>
                             <TooltipContent>
@@ -66,7 +67,7 @@ export function MobileDock() {
                                                 "size-10 rounded-full"
                                             )}
                                         >
-                                            <IconComponent className="size-5" />
+                                            <IconComponent className="size-5 transition-colors duration-200" style={{ color: social.color }} />
                                         </a>
                                     </TooltipTrigger>
                                     <TooltipContent>
@@ -88,7 +89,7 @@ export function MobileDock() {
                                         "size-10 rounded-full"
                                     )}
                                 >
-                                    <Mail className="size-5" />
+                                    <Mail className="size-5 transition-colors duration-200" style={{ color: profile.emailColor }} />
                                 </a>
                             </TooltipTrigger>
                             <TooltipContent>
