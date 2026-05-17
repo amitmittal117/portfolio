@@ -1,16 +1,82 @@
 {
   "timeline": [
     {
+      "date": "Jan 2026 - Present",
+      "title": "AI Engineer",
+      "company": "Credit Karma / Intuit",
+      "logo": "/img/experience/CreditKarma.webp",
+      "description": [
+        "Built and shipped production AI skills marketplace and multi-step agents system integrated with Claude Code and Cursor, automating marketing, analytics, and operational workflows across a 50+ skill ecosystem serving 130M+ members",
+        "Engineered BigQuery-backed AI skills for campaign performance, audience segmentation, and member data analysis, replacing hours of manual SQL work with reliable LLM-driven automation used daily by 50+ team members",
+        "Integrated MCP (Model Context Protocol) servers and tool-use architectures into multi-step agents, enabling structured automation of cross-functional marketing workflows",
+        "Improved skill platform reliability by QA-ing existing skills, fixing edge cases in prompts and data pipelines, and contributing to the skill builder, evaluation pipeline, and governance framework"
+      ],
+      "skills": ["Python", "LLM Agents", "MCP", "BigQuery", "Claude Code", "Cursor", "RAG", "Prompt Engineering"]
+    },
+    {
       "date": "May 2025 - Aug 2025",
       "title": "Software Development Intern",
-      "company": "Esri",
+      "company": "ESRI",
       "logo": "/img/experience/esri.jpg",
       "description": [
-        "Automated the end-to-end deployment pipeline for ArcGIS Enterprise on Jenkins, saving 10 hours of manual work",
-        "Developed an issue management system to enhance workflow tracking, boosting user efficiency by 50%",
-        "Collaborated with cross-functional teams to ensure seamless integration and deployment processes"
+        "Deployed Ollama-backed local LLM inference pipeline with semantic retrieval and conversation history into an AI-powered issue tracking system used by 250+ engineers, eliminating external API dependency",
+        "Architected full-stack agentic issue tracker using microservices, REST APIs, and an MCP server enabling natural language queries against Git repositories - replacing Jira and reducing operational tooling cost",
+        "Engineered AI-assisted Jenkins CI/CD pipeline for ArcGIS environment setup, reducing provisioning time by ~80% and enabling reproducible deployments via YAML-based configurations"
       ],
-      "skills": ["GIS", "Python", "PowerShell", "Jenkins"]
+      "skills": ["Python", "Ollama", "MCP", "Microservices", "Jenkins", "REST APIs", "LLM"]
+    },
+    {
+      "date": "Sept 2022 - Jan 2024",
+      "title": "Senior Software Engineer",
+      "company": "IBM Cloud",
+      "logo": "/img/experience/ibm-cloud.svg",
+      "description": [
+        "Integrated SOC2-compliant IBM Secret Manager with IaaS using encryption in transit and at rest, eliminating HSM dependency, saving $3M, and enabling seamless client portability across infrastructure nodes",
+        "Designed and owned IAM access control system using OpenID Connect for 600+ users with p95 latency under 150ms, eliminating manual LDAP workflows and saving 20+ engineering hours weekly",
+        "Built distributed data pipelines with Kafka and Debezium CDC across 60+ global data centers, profiling bottlenecks via Prometheus, Grafana, and New Relic to optimize throughput",
+        "Automated infrastructure provisioning using Ansible and Helm, reducing configuration drift by ~60% and improving system-wide reliability and observability"
+      ],
+      "skills": ["Python", "Java", "Spring Boot", "Kafka", "Debezium", "Ansible", "Helm", "Prometheus", "Grafana"]
+    },
+    {
+      "date": "Jun 2021 - Aug 2022",
+      "title": "Full-Stack Developer",
+      "company": "Axiom IO",
+      "logo": "/img/experience/axiomio.jpg",
+      "description": [
+        "Architected low-latency distributed sports aggregator in Java Spring Boot and Go, processing ~14M weekly requests with layered services reducing response time by 30%",
+        "Raised unit and integration test coverage from ~40% to 85%, cutting manual QA cycles by ~20 hours weekly and accelerating release velocity"
+      ],
+      "skills": ["Go", "Java", "Spring Boot", "Microservices", "AWS"]
+    },
+    {
+      "date": "Dec 2018 - Jun 2021",
+      "title": "Software Developer",
+      "company": "Finvolv",
+      "logo": "/img/experience/kuliza.jpg",
+      "roles": [
+        {
+          "title": "Senior Software Developer",
+          "date": "Aug 2020 - Jun 2021",
+          "description": [
+            "Led development of digital lending platform improving processing efficiency by 30% while mentoring a 4-member team",
+            "Delivered eMandate module eliminating 100% of manual EMI workflows, saving $500K annually"
+          ]
+        },
+        {
+          "title": "Software Developer",
+          "date": "Dec 2018 - Aug 2020",
+          "description": [
+            "Implemented async processing with Python Celery and optimized SQL queries, reducing execution time from 60s to 7s"
+          ]
+        }
+      ],
+      "description": [
+        "Led development of digital lending platform improving processing efficiency by 30% while mentoring a 4-member team",
+        "Delivered eMandate module eliminating 100% of manual EMI workflows, saving $500K annually",
+        "Implemented async processing with Python Celery and optimized SQL queries, reducing execution time from 60s to 7s"
+      ],
+      "skills": ["Python", "Java", "Django", "Celery", "Spring Boot", "SQL"]
     },
     {
       "date": "Apr 2024 - May 2025",
@@ -42,75 +108,6 @@
         "Conducted research on disaster management and developed safety zone application"
       ],
       "skills": ["Python", "Teaching", "Research", "Mobile Development"]
-    },
-    {
-      "date": "Aug 2022 - Jan 2024",
-      "title": "Staff Engineer",
-      "company": "IBM Cloud",
-      "logo": "/img/experience/ibm-cloud.svg",
-      "description": [
-        "Integrated IBM IAM (Blue Groups) with LDAP for automated user permission management, cutting ticket turnaround by 90%",
-        "Implemented IBM's Secret Manager on PaaS with SOC2 compliant encryption, eliminating HSMs and saving $3M",
-        "Integrated Microservices with Debezium to enable real-time data transfer and auditing for data centers"
-      ],
-      "skills": ["Python", "Java", "Spring Boot", "Django", "Cloud IaaS"]
-    },
-    {
-      "date": "Jun 2021 - Aug 2022",
-      "title": "Full-Stack Developer",
-      "company": "Axiom IO",
-      "logo": "/img/experience/axiomio.jpg",
-      "description": [
-        "Designed and architected Sports Aggregator Platform to provide seamless and reliable sports feed",
-        "Created CI/CD pipelines for dev, stage and prod for seamless deployment through Amazon CodePipeline",
-        "Developed APIs in GoLang for major game providers covering $2M+ game transactions",
-        "Built Game Aggregator Project serving ~14M requests weekly"
-      ],
-      "skills": ["Golang", "Java", "Microservices", "AWS"]
-    },
-    {
-      "date": "Dec 2018 - Jun 2021",
-      "title": "Software Developer → Senior Developer",
-      "company": "Kuliza Technologies (Finvolv)",
-      "logo": "/img/experience/kuliza.jpg",
-      "roles": [
-        {
-          "title": "Senior Software Developer",
-          "date": "Aug 2020 - Jun 2021",
-          "project": "FedFina - Federal Bank Lending",
-          "description": [
-            "Built the project from scratch as senior developer",
-            "Designed and developed the master containing information of PAN India banks",
-            "Used LDAP to manage user authentication successfully"
-          ]
-        },
-        {
-          "title": "Software Developer",
-          "date": "Feb 2020 - Aug 2020",
-          "project": "Magma FinCorp",
-          "description": [
-            "Created a retrigger system for all APIs automatically in case of server failure",
-            "Designed an Audit System for Accounts team to track money and review profit/loss daily"
-          ]
-        },
-        {
-          "title": "Software Developer",
-          "date": "Dec 2018 - Feb 2020",
-          "project": "Aditya Birla Finance Ltd",
-          "description": [
-            "Technical Lead for Educational Loan project - built architecture and major modules",
-            "Created eMandate module to automate the EMI system",
-            "SQL optimization decreasing execution time from 1 min to 7 sec"
-          ]
-        }
-      ],
-      "description": [
-        "Technical Lead for Educational Loan project - built architecture and major modules for Aditya Birla Finance",
-        "Created eMandate module to automate EMI system, saving $500K in manual processing",
-        "Built FedFina Federal Bank Lending project from scratch as senior developer",
-        "SQL optimization decreasing execution time from 1 min to 7 sec"
-      ],
-      "skills": ["Python", "Java", "Django", "Celery", "Spring Boot", "LDAP"]
     },
     {
       "date": "Sep 2017 - Dec 2018",
