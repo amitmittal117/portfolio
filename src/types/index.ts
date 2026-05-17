@@ -4,6 +4,7 @@ export interface SocialLink {
     name: string;
     url: string;
     icon: string;
+    color?: string;
 }
 
 export interface Profile {
@@ -14,6 +15,8 @@ export interface Profile {
     email: string;
     location: string;
     social: SocialLink[];
+    emailColor?: string;
+    resumeColor?: string;
     resumeUrl: string;
     profileImage: string;
 }
